@@ -8,7 +8,7 @@ if (window.Vue) detectedTech["Vue.js"] = "Detected";
 
 // 2️⃣ Detect jQuery
 if (window.jQuery) detectedTech["jQuery"] = "Detected";
-
+console.log("Detected Technologies:", detectedTech);
 // 3️⃣ Check Meta Tags for CMS Detection
 const metaTags = document.getElementsByTagName("meta");
 for (let meta of metaTags) {
@@ -25,4 +25,4 @@ for (let script of scripts) {
 }
 
 // 5️⃣ Send Results to Popup
-chrome.runtime.sendMessage({ type: "scanResult", data: detectedTech });
+chrome.runtime.sendMessage({ action: "scanResult", data: detectedTech });
