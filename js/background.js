@@ -34,8 +34,12 @@ const { setTechnologies, setCategories } = anhlong
 
 
 const Driver = {
+    caches: {},
+
     async init() {
         await Driver.loadTechnologies()
+
+        
     },
 
     log(message, source = 'driver', type = 'log') {
@@ -109,11 +113,23 @@ const Driver = {
 
     getTechnologies() {
         return anhlong.technologies
-    }
+    },
+
+    detectedTechnologies(url, technologies = []) {
+      const hostname = new URL(url).hostname; // Extract hostname from the URL
+  
+      // Cache detected technologies for the hostname
+      if (!Driver.caches[hostname]) {
+          Driver.caches[hostname] = technologies;
+      }
+  
+      console.log(`Cached technologies for ${hostname}:`, Driver.caches[hostname]);
+      return Driver.caches[hostname];
+  },
 }
 
 
 // Enable messaging between scripts
-chrome.runtime.onMessage.addListener(Driver.onMessage)
+chrome.runtime.onMessage.addListener(Driver.onMessage);
 
 Driver.init()
