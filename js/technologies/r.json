@@ -1,0 +1,35 @@
+{
+    "React": {
+    "cats": [
+      1
+    ],
+    "cpe": "cpe:2.3:a:facebook:react:*:*:*:*:*:*:*:*",
+    "description": "React is an open-source JavaScript library for building user interfaces or UI components.",
+    "dom": {
+      "body > div": {
+        "properties": {
+          "_reactRootContainer": ""
+        }
+      },
+      "div[id*='react-root'], span[id*='react-'], style[id*='react-tooltip-core-styles']": {
+        "exists": ""
+      }
+    },
+    "icon": "React.svg",
+    "js": {
+      "React.version": "^([\\d\\.]+)$\\;version:\\1",
+      "ReactOnRails": "",
+      "__REACT_ON_RAILS_EVENT_HANDLERS_RAN_ONCE__": "",
+      "__isReactFizzContext": ""
+    },
+    "meta": {
+      "description": "^Web site created using create-react-app$"
+    },
+    "scriptSrc": [
+      "react(?:-with-addons)?[.-](\\d+(?:\\.\\d+)+)[^/]*\\.js\\;version:\\1",
+      "/([\\d\\.]+)/react(?:\\.min)?\\.js\\;version:\\1",
+      "^react\\b.*\\.js"
+    ],
+    "website": "https://reactjs.org"
+    }
+}
