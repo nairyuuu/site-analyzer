@@ -31,7 +31,7 @@ function getJs(technologies) {
   return inject('js/js.js', 'js', {
     technologies: technologies
       .filter(({ js }) => Object.keys(js).length)
-      .map(({ name, js }) => ({ name, chains: Object.keys(js) })),
+      .map(({ name, js, cats }) => ({ name, chains: Object.keys(js), cats })),
   })
 }
 

@@ -1,20 +1,6 @@
-chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-    if (changeInfo.status === 'complete' && /^http/.test(tab.url)) {
-        // Remove this block to avoid redundant injection
-        // chrome.scripting.executeScript({
-        //     target: { tabId: tabId },
-        //     files: ['src/content.js']
-        // });
-    }
-});
+importScripts(chrome.runtime.getURL('js/utils.js'))
 
-chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    if (request.action === "scanResult") {
-        chrome.storage.local.set({ scanData: request.data }, () => {
-            console.log('Scan data stored in local storage:', request.data);
-        });
-    }
-});
+const { setChromeStorage, getChromeStorage } = Utils
 
 const anhlong = { 
     technologies: [],
@@ -117,17 +103,38 @@ const Driver = {
 
     detectedTechnologies(url, technologies = []) {
       const hostname = new URL(url).hostname; // Extract hostname from the URL
-  
-      // Cache detected technologies for the hostname
-      if (!Driver.caches[hostname]) {
-          Driver.caches[hostname] = technologies;
-      }
-  
-      console.log(`Cached technologies for ${hostname}:`, Driver.caches[hostname]);
-      return Driver.caches[hostname];
-  },
+
+      const groupedTechnologies = [];
+      technologies.forEach(({ name, cats }) => {
+          cats.forEach((catId) => {
+              // Access the category name using the category ID
+              const categoryName = anhlong.categories[catId]?.name || "Uncategorized";
+              let category = groupedTechnologies.find((group) => group.category === categoryName);
+
+              if (!category) {
+                  category = { category: categoryName, technologies: [] };
+                  groupedTechnologies.push(category);
+              }
+
+              category.technologies.push(name);
+          });
+      });
+
+      setChromeStorage(hostname, groupedTechnologies).then(() => {
+          Driver.log(`Technologies cached for ${hostname}`, 'driver', 'log');        
+      });
+    }
 }
 
+chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+  if (changeInfo.status === 'complete' && /^http/.test(tab.url)) {
+      // Remove this block to avoid redundant injection
+      // chrome.scripting.executeScript({
+      //     target: { tabId: tabId },
+      //     files: ['src/content.js']
+      // });
+  }
+});
 
 // Enable messaging between scripts
 chrome.runtime.onMessage.addListener(Driver.onMessage);

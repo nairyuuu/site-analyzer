@@ -11,7 +11,7 @@
             postMessage({
                 source: 'js',
                 anhlong: {
-                  js: technologies.reduce((technologies, { name, chains }) => {
+                  js: technologies.reduce((technologies, { name, chains, cats }) => {
                     chains.forEach((chain, index) => {
                       const value = chain
                         .split('.')
@@ -28,6 +28,7 @@
                       if (value !== '__UNDEFINED__') {
                         technologies.push({
                           name,
+                          cats,
                           chain,
                           value:
                             typeof value === 'string' || typeof value === 'number'
