@@ -7,6 +7,6 @@
         addEventListener('message', onMessage, { once: true });
         console.log('onMessage:', data)
     }catch(e){
-        
+        console.log('Error in content script:', e)
     }
 })();
