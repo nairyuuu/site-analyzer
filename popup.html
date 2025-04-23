@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Wappalyzer</title>
-    <link rel="stylesheet" href="popup.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Analyzer</title>
+    <link rel="stylesheet" href="assets/popup.css">
 </head>
 <body>
     <div class="container">
+        <!-- Header Section -->
         <div class="header">
-            <h1>Wappalyzer</h1>
+            <h1>Site Analyzer</h1>
             <button id="darkModeToggle" class="dark-mode-toggle">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
@@ -16,23 +18,29 @@
             </button>
         </div>
 
+        <!-- Tab Navigation -->
         <div class="tab-buttons">
-            <button id="techBtn" class="tab-button active">TECHNOLOGIES</button>
-            <button id="infoBtn" class="tab-button">MORE INFO</button>
+            <button id="techBtn" class="tab-button active">Technologies</button>
+            <button id="infoBtn" class="tab-button">More Info</button>
         </div>
 
+        <!-- Technologies Content -->
         <div id="techContent" class="content active">
-            <div id="noTechDetected">
-                No technologies detected. <a href="#" id="reloadLink">Reload</a>
-                <div class="game">Play a game?</div>
+            <div id="noTechDetected" class="message">
+                <p>No technologies detected.</p>
+                <a href="#" id="reloadLink">Reload</a>
             </div>
             <div id="techList" class="tech-list"></div>
         </div>
 
+        <!-- Additional Info Content -->
         <div id="infoContent" class="content">
-            <div class="info-message">Additional information will be displayed here</div>
+            <div class="info-message">
+                <p>Additional information will be displayed here.</p>
+            </div>
         </div>
     </div>
-    <script src="popup.js"></script>
+
+    <script src="js/popup.js"></script>
 </body>
 </html>
