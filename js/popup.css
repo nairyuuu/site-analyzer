@@ -1,0 +1,136 @@
+:root {
+    --primary-blue: #1a73e8;
+    --dark-blue: #0d5bb7;
+    --white: #ffffff;
+    --text-color: #333333;
+    --light-gray: #f5f5f5;
+    --gray: #999999;
+    --dark-bg: #1e1e1e;
+    --dark-text: #e0e0e0;
+}
+
+.dark-mode {
+    --primary-blue: #0d47a1;
+    --dark-blue: #0a3d8a;
+    --white: #1e1e1e;
+    --text-color: #e0e0e0;
+    --light-gray: #2d2d2d;
+    --gray: #aaaaaa;
+}
+
+body {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--white);
+    transition: all 0.3s ease;
+}
+
+.container {
+    padding: 15px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.tab-buttons {
+    display: flex;
+    margin-bottom: 10px;
+    gap: 5px;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 10px;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.tab-button:hover {
+    background-color: var(--dark-blue);
+}
+
+.tab-button.active {
+    background-color: var(--dark-blue);
+    font-weight: bold;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+
+#noTechDetected {
+    text-align: center;
+    color: var(--text-color);
+    padding: 20px 0;
+}
+
+a {
+    color: var(--primary-blue);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.game {
+    font-style: italic;
+    color: var(--gray);
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+.dark-mode-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-color);
+    padding: 5px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .dark-mode-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.tech-list {
+    display: none;
+}
+
+.info-message {
+    text-align: center;
+    padding: 20px;
+    color: var(--text-color);
+}
