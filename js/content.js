@@ -1,32 +1,37 @@
 function inject(src, id, message) {
-    return new Promise((resolve) => {
-        // Inject a script tag into the page to access methods of the window object
-        const script = document.createElement('script');
+  return new Promise((resolve) => {
+      // Inject a script tag into the page to access methods of the window object
+      const script = document.createElement('script');
 
-        script.onload = () => {
-            const onMessage = ({ data }) => {
-                window.removeEventListener('message', onMessage);
-                resolve(data);
-            };
+      script.onload = () => {
+          const onMessage = ({ data }) => {
+              // Filter messages to ensure they are from the injected script
+              if (data && data.source === id) {
+                  window.removeEventListener('message', onMessage);
+                  script.remove();
+                  resolve(data.anhlong);
+              }
+          };
 
-            window.addEventListener('message', onMessage);
+          window.addEventListener('message', onMessage);
 
-            window.postMessage({
-                anhlong: message,
-            });
-        };
+          // Send a message to the injected script with a unique identifier
+          window.postMessage({
+              source: 'content-script',
+              anhlong: message,
+          });
+      };
 
-        script.setAttribute('src', chrome.runtime.getURL(src));
-        document.body.appendChild(script);
-    });
+      script.setAttribute('src', chrome.runtime.getURL(src));
+      document.body.appendChild(script);
+  });
 }
-
 
 function getJs(technologies) {
   return inject('js/js.js', 'js', {
     technologies: technologies
       .filter(({ js }) => Object.keys(js).length)
-      .map(({ name, js }) => ({ name, chains: Object.keys(js) })),
+      .map(({ name, js, cats }) => ({ name, chains: Object.keys(js), cats })),
   })
 }
 
@@ -35,7 +40,7 @@ const Content = {
     async init(){
         try {
             const technologies = await Content.driver('getTechnologies')
-            console.log('technologies', technologies)
+            
             await Content.onGetTechnologies(technologies)
 
             // // Delayed second pass to capture async JS
@@ -109,8 +114,15 @@ const Content = {
     async onGetTechnologies(technologies = []) {
         const url = location.href
     
-        const js = await getJs(technologies)
+        const js = (await getJs(technologies)).js
+        console.log('js', js)
         //const dom = await getDom(technologies)
+
+        await Promise.all(
+        [Content.driver('detectedTechnologies', [url, js])
+        // , Content.driver('analyzeDom', [url, dom])
+        ])
+      ;
     
     },
 
