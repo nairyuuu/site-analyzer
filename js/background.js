@@ -102,13 +102,16 @@ const Driver = {
     },
 
     detectedTechnologies(url, technologies = []) {
-      const hostname = new URL(url).hostname; // Extract hostname from the URL
+      const hostname = new URL(url).hostname;
+
+      console.log('Hostname:', hostname);
   
       // Initialize groupedTechnologies as an empty array
       let groupedTechnologies = [];
   
       // Retrieve existing data from Chrome storage for the hostname
       getChromeStorage(hostname).then((storedData) => {
+
           groupedTechnologies = storedData || [];
   
           technologies.forEach(({ name, cats }) => {
@@ -137,9 +140,8 @@ const Driver = {
               });
           });
   
-          // Save the updated groupedTechnologies to Chrome storage
           setChromeStorage(hostname, groupedTechnologies).then(() => {
-              Driver.log(`Technologies cached for ${hostname}`, 'driver', 'log');
+              Driver.log(`Technologies cached for ${hostname} `, 'driver', 'log');
           });
       });
   }

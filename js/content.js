@@ -30,27 +30,23 @@ function inject(src, id, message) {
 function getJs(technologies) {
   return inject('js/js.js', 'js', {
     technologies: technologies
-      .filter(({ js }) => Object.keys(js).length)
-      .map(({ name, js, cats }) => ({ name, chains: Object.keys(js), cats })),
-  })
+      .filter(({ js, scriptSrc }) => Object.keys(js).length || (scriptSrc && scriptSrc.length)) // Include technologies with `js` or `scriptSrc`
+      .map(({ name, js, scriptSrc, cats }) => ({ name, chains: Object.keys(js), scriptSrc, cats })), // Pass `scriptSrc` to the injected script
+  });
 }
 
-async function getDom(technologies) {
+function getDom(technologies) {
   const _technologies = technologies
     .filter(({ dom }) => dom && dom.constructor === Object)
     .map(({ name, dom, cats }) => ({ name, dom, cats }));
 
-  const result = await inject('js/dom.js', 'dom', {
+  return inject('js/dom.js', 'dom', {
     technologies: _technologies.filter(({ dom }) =>
       Object.values(dom)
         .flat()
         .some(({ properties }) => properties)
     ),
   });
-
-  const returnVal = Array.isArray(result) ? result : []; 
-
-  return returnVal
 }
 
 const Content = {  

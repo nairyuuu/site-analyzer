@@ -56,7 +56,6 @@
                                 });
                             });
                         });
-                        console.log('detectedTechnologies', detectedTechnologies);
                         return detectedTechnologies;
                     }, []),
                 },
