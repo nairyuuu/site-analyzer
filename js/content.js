@@ -35,6 +35,23 @@ function getJs(technologies) {
   })
 }
 
+async function getDom(technologies) {
+  const _technologies = technologies
+    .filter(({ dom }) => dom && dom.constructor === Object)
+    .map(({ name, dom, cats }) => ({ name, dom, cats }));
+
+  const result = await inject('js/dom.js', 'dom', {
+    technologies: _technologies.filter(({ dom }) =>
+      Object.values(dom)
+        .flat()
+        .some(({ properties }) => properties)
+    ),
+  });
+
+  const returnVal = Array.isArray(result) ? result : []; 
+
+  return returnVal
+}
 
 const Content = {  
     async init(){
@@ -114,13 +131,12 @@ const Content = {
     async onGetTechnologies(technologies = []) {
         const url = location.href
     
-        const js = (await getJs(technologies)).js
-        console.log('js', js)
-        //const dom = await getDom(technologies)
+        const js = (await getJs(technologies))?.js || [];
+        const dom = (await getDom(technologies))?.dom || [];
 
         await Promise.all(
         [Content.driver('detectedTechnologies', [url, js])
-        // , Content.driver('analyzeDom', [url, dom])
+         ,Content.driver('detectedTechnologies', [url, dom])
         ])
       ;
     

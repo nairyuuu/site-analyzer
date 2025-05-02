@@ -37,7 +37,7 @@
                         })
                       }
                     })
-        
+                    console.log('technologies JS', technologies)
                     return technologies
                   }, []),
                 },
@@ -45,6 +45,6 @@
         };
         addEventListener('message', onMessage, { once: true });
     }catch(e){
-        console.log('Error in content script:', e)
+
     }
 })();

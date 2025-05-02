@@ -104,33 +104,46 @@ const Driver = {
     detectedTechnologies(url, technologies = []) {
       const hostname = new URL(url).hostname; // Extract hostname from the URL
   
-      const groupedTechnologies = [];
-      technologies.forEach(({ name, cats }) => {
-          // Find the technology in anhlong.technologies to get the icon
-          const techData = anhlong.technologies.find((tech) => tech.name === name);
+      // Initialize groupedTechnologies as an empty array
+      let groupedTechnologies = [];
   
-          cats.forEach((catId) => {
-              // Access the category name using the category ID
-              const categoryName = anhlong.categories[catId]?.name || "Uncategorized";
-              let category = groupedTechnologies.find((group) => group.category === categoryName);
+      // Retrieve existing data from Chrome storage for the hostname
+      getChromeStorage(hostname).then((storedData) => {
+          groupedTechnologies = storedData || [];
   
-              if (!category) {
-                  category = { category: categoryName, technologies: [] };
-                  groupedTechnologies.push(category);
-              }
+          technologies.forEach(({ name, cats }) => {
+              // Find the technology in anhlong.technologies to get the icon
+              const techData = anhlong.technologies.find((tech) => tech.name === name);
   
-              // Add the technology with its icon
-              category.technologies.push({
-                  name,
-                  icon: techData?.icon || null // Use the icon from anhlong.technologies or null if not found
+              cats.forEach((catId) => {
+                  // Access the category name using the category ID
+                  const categoryName = anhlong.categories[catId]?.name || "Uncategorized";
+                  let category = groupedTechnologies.find((group) => group.category === categoryName);
+  
+                  if (!category) {
+                      category = { category: categoryName, technologies: [] };
+                      groupedTechnologies.push(category);
+                  }
+  
+                  // Check if the technology already exists in the category
+                  const existingTech = category.technologies.find((tech) => tech.name === name);
+                  if (!existingTech) {
+                      // Add the technology with its icon
+                      category.technologies.push({
+                          name,
+                          icon: techData?.icon || null // Use the icon from anhlong.technologies or null if not found
+                      });
+                  }
               });
           });
-      });
   
-      setChromeStorage(hostname, groupedTechnologies).then(() => {
-          Driver.log(`Technologies cached for ${hostname}`, 'driver', 'log');
+          // Save the updated groupedTechnologies to Chrome storage
+          setChromeStorage(hostname, groupedTechnologies).then(() => {
+              Driver.log(`Technologies cached for ${hostname}`, 'driver', 'log');
+          });
       });
   }
+
 }
 
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {

@@ -34,7 +34,7 @@
   ],
   "web_accessible_resources": [
     {
-      "resources": ["js/js.js","js/technologies/icons/*"],
+      "resources": ["js/js.js","js/dom.js","js/technologies/icons/*"],
       "matches": ["<all_urls>"]
     }
   ]
