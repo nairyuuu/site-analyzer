@@ -64,7 +64,7 @@ const Driver = {
     
           // Object.keys(technologies).forEach((name) => {
           // })
-    
+
           setTechnologies(technologies)
           setCategories(categories)
         } catch (error) {
@@ -101,50 +101,68 @@ const Driver = {
         return anhlong.technologies
     },
 
+    getHeaders(request) {
+      return Driver.caches[request] || {}
+    },
+
+    async onWebRequestComplete(request) {
+      if (!request.responseHeaders || request.responseHeaders.length === 0) {
+        console.warn('No response headers found for request:', request.url);
+        return;
+      }
+      const headers = {};
+    
+      try {
+        request.responseHeaders.forEach((header) => {
+          const name = header.name.toLowerCase(); // Convert header name to lowercase
+    
+          headers[name] = headers[name] || [];
+          headers[name].push(
+            (header.value || header.binaryValue || '').toString()
+          );
+        });
+        // Store headers in Driver.caches for later use
+        Driver.caches[request.url] = headers;
+      } catch (error) {
+        console.error('Error processing response headers:', error);
+      }
+    },
+
     detectedTechnologies(url, technologies = []) {
       const hostname = new URL(url).hostname;
-
-      console.log('Hostname:', hostname);
-  
-      // Initialize groupedTechnologies as an empty array
-      let groupedTechnologies = [];
-  
-      // Retrieve existing data from Chrome storage for the hostname
       getChromeStorage(hostname).then((storedData) => {
 
-          groupedTechnologies = storedData || [];
-  
+        let groupedTechnologies = [];
+        if (technologies.length > 0) {
           technologies.forEach(({ name, cats }) => {
-              // Find the technology in anhlong.technologies to get the icon
-              const techData = anhlong.technologies.find((tech) => tech.name === name);
-  
-              cats.forEach((catId) => {
-                  // Access the category name using the category ID
-                  const categoryName = anhlong.categories[catId]?.name || "Uncategorized";
-                  let category = groupedTechnologies.find((group) => group.category === categoryName);
-  
-                  if (!category) {
-                      category = { category: categoryName, technologies: [] };
-                      groupedTechnologies.push(category);
-                  }
-  
-                  // Check if the technology already exists in the category
-                  const existingTech = category.technologies.find((tech) => tech.name === name);
-                  if (!existingTech) {
-                      // Add the technology with its icon
-                      category.technologies.push({
-                          name,
-                          icon: techData?.icon || null // Use the icon from anhlong.technologies or null if not found
-                      });
-                  }
-              });
+
+            const techData = anhlong.technologies.find((tech) => tech.name === name);
+    
+            cats.forEach((catId) => {
+              const categoryName = anhlong.categories[catId]?.name || "Uncategorized";
+              let category = groupedTechnologies.find((group) => group.category === categoryName);
+    
+              if (!category) {
+                category = { category: categoryName, technologies: [] };
+                groupedTechnologies.push(category);
+              }
+
+              const existingTech = category.technologies.find((tech) => tech.name === name);
+              if (!existingTech) {
+                category.technologies.push({
+                  name,
+                  icon: techData?.icon || null,
+                });
+              }
+            });
           });
-  
-          setChromeStorage(hostname, groupedTechnologies).then(() => {
-              Driver.log(`Technologies cached for ${hostname} `, 'driver', 'log');
-          });
+        }
+
+        setChromeStorage(hostname, groupedTechnologies).then(() => {
+          Driver.log(`Technologies cached for ${hostname}`, 'driver', 'log');
+        });
       });
-  }
+    }
 
 }
 
@@ -157,6 +175,12 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
       // });
   }
 });
+
+chrome.webRequest.onCompleted.addListener(
+  Driver.onWebRequestComplete,
+  { urls: ['http://*/*', 'https://*/*'], types: ['main_frame'] },
+  ['responseHeaders']
+)
 
 // Enable messaging between scripts
 chrome.runtime.onMessage.addListener(Driver.onMessage);

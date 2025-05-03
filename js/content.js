@@ -1,37 +1,44 @@
 function inject(src, id, message) {
-  return new Promise((resolve) => {
-      // Inject a script tag into the page to access methods of the window object
+  return new Promise((resolve, reject) => {
+    try {
       const script = document.createElement('script');
 
       script.onload = () => {
-          const onMessage = ({ data }) => {
-              // Filter messages to ensure they are from the injected script
-              if (data && data.source === id) {
-                  window.removeEventListener('message', onMessage);
-                  script.remove();
-                  resolve(data.anhlong);
-              }
-          };
+        const onMessage = ({ data }) => {
+          if (data && data.source === id) {
+            window.removeEventListener('message', onMessage);
+            script.remove();
+            resolve(data.anhlong);
+          }
+        };
 
-          window.addEventListener('message', onMessage);
+        window.addEventListener('message', onMessage);
 
-          // Send a message to the injected script with a unique identifier
-          window.postMessage({
-              source: 'content-script',
-              anhlong: message,
-          });
+        window.postMessage({
+          source: 'content-script',
+          anhlong: message,
+        });
+      };
+
+      script.onerror = (error) => {
+        console.error(`Failed to load script: ${src}`, error);
+        reject(new Error(`Failed to load script: ${src}`));
       };
 
       script.setAttribute('src', chrome.runtime.getURL(src));
       document.body.appendChild(script);
+    } catch (error) {
+      console.error('Error in inject function:', error);
+      reject(error);
+    }
   });
 }
 
 function getJs(technologies) {
   return inject('js/js.js', 'js', {
     technologies: technologies
-      .filter(({ js, scriptSrc }) => Object.keys(js).length || (scriptSrc && scriptSrc.length)) // Include technologies with `js` or `scriptSrc`
-      .map(({ name, js, scriptSrc, cats }) => ({ name, chains: Object.keys(js), scriptSrc, cats })), // Pass `scriptSrc` to the injected script
+    .filter(({ js, scriptSrc }) => js && (Object.keys(js).length || (scriptSrc && scriptSrc.length)))
+    .map(({ name, js, scriptSrc, cats }) => ({ name, chains: Object.keys(js || {}), scriptSrc, cats })),
   });
 }
 
@@ -47,6 +54,49 @@ function getDom(technologies) {
         .some(({ properties }) => properties)
     ),
   });
+}
+
+async function getHeaders(technologies) {
+  const headers = await Content.driver('getHeaders', location.href);
+
+  if (!headers) {
+    console.warn('No headers received.');
+    return [];
+  }
+
+  const detectedTechnologies = [];
+
+  technologies.forEach(({ name, headers: headerPatterns, cats }) => {
+    if (headerPatterns) {
+      Object.entries(headerPatterns).forEach(([headerName, pattern]) => {
+        const headerValues = headers[headerName.toLowerCase()]; // Normalize header name to lowercase
+
+        if (headerValues && Array.isArray(headerValues)) {
+          headerValues.forEach((headerValue) => {
+            try {
+              const regex = new RegExp(pattern.split('\\;')[0]); // Extract regex before `;`
+              const match = headerValue.match(regex);
+
+              if (match) {
+                const version = pattern.includes('\\;version:') ? match[1] : null; // Extract version if defined
+                detectedTechnologies.push({
+                  name,
+                  cats,
+                  header: headerName,
+                  value: headerValue,
+                  version,
+                });
+              }
+            } catch (error) {
+              console.error(`Error processing header pattern for ${name}:`, error);
+            }
+          });
+        }
+      });
+    }
+  });
+
+  return detectedTechnologies;
 }
 
 const Content = {  
@@ -124,19 +174,17 @@ const Content = {
         })
       },
 
-    async onGetTechnologies(technologies = []) {
-        const url = location.href
-    
+      async onGetTechnologies(technologies = []) {
+        const url = location.href;
+      
+        const headers = (await getHeaders(technologies)) || [];
         const js = (await getJs(technologies))?.js || [];
         const dom = (await getDom(technologies))?.dom || [];
 
-        await Promise.all(
-        [Content.driver('detectedTechnologies', [url, js])
-         ,Content.driver('detectedTechnologies', [url, dom])
-        ])
-      ;
-    
-    },
+        const allDetectedTechnologies = [...headers, ...js, ...dom];
+
+        await Content.driver('detectedTechnologies', [url, allDetectedTechnologies]);
+      },
 
 };
 

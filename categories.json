@@ -1,14 +1,22 @@
 {
-    "1":
+    "12":
     {
         "name": "JavaScript frameworks"
     },
-    "2":
-    {
-        "name": "CSS frameworks"
-    },
-    "3":
+    "22":
     {
         "name": "Web servers"
-    }
+    },
+    "59": 
+    {
+    "name": "JavaScript libraries"
+    },
+    "64": 
+    {
+    "name": "Reverse proxies"
+    },
+    "66": 
+    {
+    "name": "UI frameworks"
+  }
 }

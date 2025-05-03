@@ -33,21 +33,25 @@
         });
 
         // Detect using `scriptSrc`
-        if (scriptSrc && scriptSrc.length) {
-          const scripts = Array.from(document.querySelectorAll('script[src]')); // Get all <script> tags with `src`
+        if (scriptSrc && Array.isArray(scriptSrc)) {
+          const scripts = Array.from(document.querySelectorAll('script[src]'));
           scripts.forEach((script) => {
             const src = script.getAttribute('src');
             scriptSrc.forEach((pattern) => {
-              const regex = new RegExp(pattern.split('\\;')[0]); // Extract the regex part before `;`
-              const match = src.match(regex);
-              if (match) {
-                const version = pattern.includes('\\;version:') ? match[1] : null; // Extract version if defined
-                detected.push({
-                  name,
-                  cats,
-                  scriptSrc: src,
-                  version,
-                });
+              try {
+                const regex = new RegExp(pattern.split('\\;')[0]);
+                const match = src.match(regex);
+                if (match) {
+                  const version = pattern.includes('\\;version:') ? match[1] : null;
+                  detected.push({
+                    name,
+                    cats,
+                    scriptSrc: src,
+                    version,
+                  });
+                }
+              } catch (error) {
+                console.error(`Invalid regex pattern: ${pattern}`, error);
               }
             });
           });
