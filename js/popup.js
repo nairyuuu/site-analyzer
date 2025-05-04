@@ -34,14 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
         techContent.classList.remove("active");
     });
 
-    // Reload functionality
-    const reloadLink = document.getElementById("reloadLink");
-    reloadLink.addEventListener("click", (e) => {
-        e.preventDefault();
-        chrome.runtime.sendMessage({ action: "rescan" });
-        window.close();
-    });
-
     // Load technology data for the current domain
     const noTechDetected = document.getElementById("noTechDetected");
     const techList = document.getElementById("techList");
@@ -74,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         group.technologies.forEach((tech) => {
                             const techItem = document.createElement("li");
                             techItem.innerHTML = `
-                                <img src="js/technologies/icons/${tech.icon}" alt="${tech.name}" style="width: 16px; height: 16px; margin-right: 8px;">
+                                <img src="js/technologies/icons/${tech.icon}" style="width: 16px; height: 16px; margin-right: 8px;">
                                 ${tech.name}
                             `;
                             techList.appendChild(techItem);
@@ -94,4 +86,53 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error("No active tab found.");
         }
     });
+
+    // Version check functionality
+    const versionCheckUrl = "https://www.notaya.shameimaru.online/version";
+    const updateUrl = "https://www.notaya.shameimaru.online/";
+
+    // Get the current version from manifest.json
+    const currentVersion = chrome.runtime.getManifest().version;
+    console.log("Current version:", currentVersion);
+
+    // Fetch the latest version from the server
+    fetch(versionCheckUrl)
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error(`Failed to fetch version: ${response.statusText}`);
+            }
+            return response.text();
+        })
+        .then((latestVersion) => {
+            const versionMessage = document.createElement("div");
+            versionMessage.classList.add("version-message");
+
+            if (currentVersion !== latestVersion.trim()) {
+                // Show update message
+                versionMessage.innerHTML = `
+                    <p>A new version (${latestVersion.trim()}) is available!</p>
+                    <a href="${updateUrl}" target="_blank">Click here to update</a>
+                `;
+                versionMessage.style.color = "red";
+            } else {
+                // Show up-to-date message
+                versionMessage.innerHTML = `<p>Your extension is up to date (v${currentVersion}).</p>`;
+                versionMessage.style.color = "green";
+            }
+
+            // Append the version message to the "More Info" tab
+            const infoContent = document.getElementById("infoContent");
+            infoContent.appendChild(versionMessage);
+        })
+        .catch((error) => {
+            console.error("Error checking version:", error);
+
+            const errorMessage = document.createElement("div");
+            errorMessage.classList.add("version-message");
+            errorMessage.innerHTML = `<p>Failed to check for updates. Please try again later.</p>`;
+            errorMessage.style.color = "orange";
+
+            const infoContent = document.getElementById("infoContent");
+            infoContent.appendChild(errorMessage);
+        });
 });
