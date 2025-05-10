@@ -1,0 +1,274 @@
+{
+    "NProgress": {
+        "cats": [
+            59
+        ],
+        "description": "NProgress is a JavaScript library that displays a nanoscopic progress bar at the top of websites or web applications. It includes trickle animations to indicate loading activity, enhancing user experience by showing that content is being loaded.",
+        "icon": "NProgress.svg",
+        "js": {
+            "NProgress.version": "([\\d.]+)\\;version:\\1"
+        },
+        "scriptSrc": "/nprogress\\.min\\.js",
+        "website": "https://ricostacruz.com/nprogress/"
+    },
+    "NSW Design System": {
+        "cats": [
+            66
+        ],
+        "dom": ".nsw-container, .nsw-header, .nsw-icon, link[href*='nsw-design-system']",
+        "icon": "NSW Design System.svg",
+        "js": {
+            "NSW.initSite": ""
+        },
+        "website": "https://www.digital.nsw.gov.au/digital-design-system"
+    },
+    "Naive UI": {
+        "cats": [
+            66
+        ],
+        "description": "Naive UI is a Vue.js UI library written in TypeScript, offering more than 80 treeshakable components.",
+        "dom": {
+            "style[cssr-id^='n-']": {
+                "attributes": {
+                    "cssr-id": "^n-[a-z-]+$\\;confidence:99"
+                }
+            }
+        },
+        "icon": "Naive UI.svg",
+        "website": "https://www.naiveui.com"
+    },
+    "NamelessMC": {
+        "cats": [
+            1
+        ],
+        "description": "NamelessMC is an open-source website software geared towards gaming communities, offering features such as forums and user profiles for managing online presence.",
+        "dom": "span.item > a[href*='//namelessmc.com']",
+        "icon": "NamelessMC.png",
+        "website": "https://namelessmc.com"
+    },
+    "NationBuilder": {
+        "cats": [
+            1,
+            53
+        ],
+        "description": "NationBuilder is a Los Angeles based technology start-up that develops content management and customer relationship management (CRM) software.",
+        "icon": "NationBuilder.svg",
+        "js": {
+            "NB.FBAppId": "",
+            "NB.Liquid": ""
+        },
+        "website": "https://nationbuilder.com"
+    },
+    "Naviga": {
+        "cats": [
+            1
+        ],
+        "description": "Naviga is a content creation and management tool, formerly known as Infomaker, designed for media and publishing companies.",
+        "dom": "link[href*='.infomaker.io/']",
+        "icon": "Naviga.svg",
+        "scriptSrc": "\\.infomaker\\.io/",
+        "website": "https://www.navigaglobal.com/"
+    },
+    "Neos CMS": {
+        "cats": [
+            1
+        ],
+        "headers": {
+            "X-Flow-Powered": "Neos/?(.+)?$\\;version:\\1"
+        },
+        "icon": "Neos.svg",
+        "scriptSrc": "/Neos\\.Neos/",
+        "website": "https://neos.io"
+    },
+    "Nepso": {
+        "cats": [
+            1
+        ],
+        "headers": {
+            "X-Powered-CMS": "Nepso"
+        },
+        "icon": "nepso.svg",
+        "website": "https://www.nepso.com"
+    },
+    "Nethouse Website Builder": {
+        "cats": [
+            1,
+            6
+        ],
+        "description": "Nethouse Website Builder is a platform enabling individuals to craft websites, online stores, or landing pages independently, without the need for programmers or designers.",
+        "icon": "Nethouse.svg",
+        "js": {
+            "Nethouse": ""
+        },
+        "website": "https://nethouse.ru"
+    },
+    "New UI": {
+        "cats": [
+            66
+        ],
+        "description": "New UI is a framework designed for developing user interfaces for SaaS applications and websites.",
+        "icon": "NewUI.svg",
+        "website": "https://new-ui.com/docs/about/overview"
+    },
+    "Newt": {
+        "cats": [
+            1
+        ],
+        "description": "Newt is a headless CMS that allows you to create and manage structured content and distribute it to a variety of channels.",
+        "icon": "Newt.svg",
+        "website": "https://www.newt.so"
+    },
+    "Next.js": {
+        "cats": [
+            12,
+            18,
+            22,
+            57
+        ],
+        "description": "Next.js is a React framework for developing single page Javascript applications.",
+        "headers": {
+            "x-powered-by": "^Next\\.js ?([0-9.]+)?\\;version:\\1"
+        },
+        "icon": "Next.js.svg",
+        "js": {
+            "__NEXT_DATA__": "",
+            "next.version": "^(.+)$\\;version:\\1"
+        },
+        "website": "https://nextjs.org"
+    },
+    "NextUI": {
+        "cats": [
+            66
+        ],
+        "description": "NextUI allows you to make beautiful, modern, and fast websites/applications regardless of your design experience, created with React.js and Stitches, based on React Aria and inspired by Vuesax.",
+        "dom": "link[href*='nextui.org'][rel='canonical']",
+        "icon": "NextUI.svg",
+        "website": "https://nextui.org/"
+    },
+    "Nextra": {
+        "cats": [
+            57
+        ],
+        "description": "Nextra is Next.js based static site generator.",
+        "dom": [
+            "div.nextra-container",
+            "div.nextra-nav-container",
+            "div.nextra-sidebar-container"
+        ],
+        "icon": "Nextra.svg",
+        "js": {
+            "__nextra_internal__": "",
+            "__nextra_pageContext__": ""
+        },
+        "website": "https://nextra.site/"
+    },
+    "NexusPHP": {
+        "cats": [
+            1
+        ],
+        "description": "NexusPHP is an open-sourced private tracker script written in PHP.",
+        "icon": "NexusPHP.png",
+        "meta": {
+            "generator": "^NexusPHP$"
+        },
+        "website": "https://nexusphp.org"
+    },
+    "Nginx": {
+        "cats": [
+            22,
+            64
+        ],
+        "description": "Nginx is a web server that can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache.",
+        "headers": {
+            "Server": "nginx(?:/([\\d.]+))?\\;version:\\1",
+            "X-Fastcgi-Cache": ""
+        },
+        "icon": "Nginx.svg",
+        "website": "https://nginx.org/en"
+    },
+    "Notie": {
+        "cats": [
+            59
+        ],
+        "description": "Notie is a notification, input, and selection suite for javascript, with no dependencies.",
+        "js": {
+            "notie": ""
+        },
+        "website": "https://github.com/jaredreich/notie"
+    },
+    "Nrdevo": {
+        "cats": [
+            1
+        ],
+        "description": "Nrdevo is a subscription-based software that allows anyone to set up a website, online store, and more.",
+        "icon": "Nrdevo.svg",
+        "meta": {
+            "generator": "^Nrdevo(?: ([0-9.]+))?$\\;version:\\1"
+        },
+        "website": "https://nrdevo.com/"
+    },
+    "Nucleus CMS": {
+        "cats": [
+            1
+        ],
+        "description": "Nucleus CMS is a free, open-source web application framework and content management system.",
+        "icon": "NucleusCMS.svg",
+        "meta": {
+            "generator": "^Nucleus(?: CMS)?\\s+v?(\\d+\\.\\d+(?:\\.\\d+)?)\\;version:\\1"
+        },
+        "scriptSrc": "nucleuscms\\.er\\.cz/",
+        "website": "https://www.nucleus-cms.com"
+    },
+    "Nukeviet CMS": {
+        "cats": [
+            1
+        ],
+        "description": "NukeViet CMS is a Vietnamese content management system.",
+        "icon": "Nukeviet CMS.png",
+        "js": {
+            "nv_DigitalClock": "\\;confidence:50",
+            "nv_is_change_act_confirm": "\\;confidence:50"
+        },
+        "meta": {
+            "generator": "NukeViet v([\\d.]+)\\;version:\\1"
+        },
+        "website": "https://nukeviet.vn/en/"
+    },
+    "Nuxt UI": {
+        "cats": [
+            66
+        ],
+        "description": "Nuxt UI is a customizable UI library designed for Nuxt.",
+        "dom": "style[id*='nuxt-ui-']",
+        "icon": "Nuxt.js.svg",
+        "website": "https://ui.nuxt.com"
+    },
+    "Nuxt.js": {
+        "cats": [
+            12,
+            18,
+            57
+        ],
+        "description": "Nuxt is a Vue framework for developing modern web applications.",
+        "dom": "div[id^='__nuxt']",
+        "icon": "Nuxt.js.svg",
+        "js": {
+            "$nuxt": "",
+            "__NUXT__": "",
+            "useNuxtApp": ""
+        },
+        "scriptSrc": [
+            "/_nuxt/"
+        ],
+        "website": "https://nuxt.com"
+    },
+    "nghttpx - HTTP/2 proxy": {
+        "cats": [
+            22
+        ],
+        "headers": {
+            "Server": "nghttpx nghttp2/?([\\d.]+)?\\;version:\\1"
+        },
+        "website": "https://nghttp2.org"
+    }
+}

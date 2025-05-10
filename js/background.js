@@ -45,25 +45,21 @@ const Driver = {
     
           let technologies = {}
     
-        //   for (const index of Array(27).keys()) {
-        //     const character = index ? String.fromCharCode(index + 96) : '_'
+          for (const index of Array(27).keys()) {
+            const character = index ? String.fromCharCode(index + 96) : '_'
     
-        //     technologies = {
-        //       ...technologies,
-        //       ...(await (
-        //         console.log(`js/technologies/${character}.json`),
-        //         await fetch(chrome.runtime.getURL(`js/technologies/${character}.json`))
-        //       ).json()),
-        //     }
-        //   }
-          technologies = {
+            technologies = {
               ...technologies,
               ...(await (
-              await fetch(chrome.runtime.getURL(`js/technologies/r.json`))
-              ).json())};
-    
-          // Object.keys(technologies).forEach((name) => {
-          // })
+                await fetch(chrome.runtime.getURL(`js/technologies/${character}.json`))
+              ).json()),
+            }
+          }
+          // technologies = {
+          //     ...technologies,
+          //     ...(await (
+          //     await fetch(chrome.runtime.getURL(`js/technologies/r.json`))
+          //     ).json())};
 
           setTechnologies(technologies)
           setCategories(categories)

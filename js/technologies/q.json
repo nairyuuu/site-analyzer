@@ -1,0 +1,106 @@
+{
+    "Quant": {
+        "cats": [
+            1
+        ],
+        "description": "Quant is a Japanese content and creator management system designed to organize, manage, and distribute digital content.",
+        "icon": "Quant.svg",
+        "scriptSrc": "\\.quant\\.jp/",
+        "website": "https://pf.quant.page"
+    },
+    "Quarto": {
+        "cats": [
+            57
+        ],
+        "description": "Quarto is an open-source technical publishing system.",
+        "icon": "Quarto.svg",
+        "js": {
+            "quartoOpenSearch": "",
+            "quartoToggleHeadroom": "",
+            "quartoToggleReader": ""
+        },
+        "meta": {
+            "generator": "^quarto-([\\d\\.]+)$\\;version:\\1"
+        },
+        "website": "https://quarto.org"
+    },
+    "Quasar": {
+        "cats": [
+            12
+        ],
+        "description": "Quasar is an open-source Vue.js based framework.",
+        "dom": {
+            "div#q-app": {
+                "attributes": {
+                    "id": "\\;confidence:50"
+                }
+            },
+            "div.q-notifications": {
+                "exists": ""
+            },
+            "div.q-page-container": {
+                "attributes": {
+                    "class": "\\;confidence:50"
+                }
+            },
+            "span.q-focus-helper": {
+                "exists": ""
+            }
+        },
+        "icon": "Quasar.svg",
+        "website": "https://quasar.dev"
+    },
+    "Quick.CMS": {
+        "cats": [
+            1
+        ],
+        "icon": "Quick.CMS.png",
+        "meta": {
+            "generator": "Quick\\.CMS(?: v([\\d.]+))?\\;version:\\1"
+        },
+        "website": "https://opensolution.org"
+    },
+    "Quicklink": {
+        "cats": [
+            59,
+            92
+        ],
+        "description": "Quicklink is a JS library which aims to be a drop-in solution for sites to prefetch links based on what is in the user's viewport.",
+        "icon": "Quicklink.svg",
+        "js": {
+            "drupalSettings.quicklink": "",
+            "quicklink": ""
+        },
+        "scriptSrc": "quicklink@([\\d.]+)/dist/quicklink.*\\.js\\;version:\\1",
+        "website": "https://getquick.link/"
+    },
+    "Quintype": {
+        "cats": [
+            1
+        ],
+        "cookies": {
+            "qtype-session": ""
+        },
+        "description": "Quintype is a digital publishing platform that provides content management, audience engagement, and monetisation solutions for digital media organisations.",
+        "headers": {
+            "link": "fea\\.assettype\\.com/quintype-ace"
+        },
+        "icon": "Quintype.svg",
+        "website": "https://www.quintype.com"
+    },
+    "qiankun": {
+        "cats": [
+            59
+        ],
+        "description": "qiankun is a JS library who helps developers to build a micro frontends system.",
+        "dom": {
+            "div[id^='__qiankun_']": {
+                "attributes": {
+                    "data-version": "([\\d\\.]+)\\;version:\\1"
+                }
+            }
+        },
+        "icon": "qiankun.svg",
+        "website": "https://qiankun.umijs.org"
+    }
+}

@@ -1,0 +1,324 @@
+{
+    "OWL Carousel": {
+        "cats": [
+            59
+        ],
+        "description": "OWL Carousel is an enabled jQuery plugin that lets you create responsive carousel sliders.",
+        "dom": "link[href*='owl.carousel.css'], link[href*='owl.carousel.min.css']",
+        "icon": "OWL Carousel.png",
+        "scriptSrc": "owl\\.carousel.*\\.js",
+        "website": "https://owlcarousel2.github.io/OwlCarousel2/"
+    },
+    "October CMS": {
+        "cats": [
+            1
+        ],
+        "cookies": {
+            "october_session": ""
+        },
+        "description": "October is a free, open-source, self-hosted CMS platform based on the Laravel PHP Framework.",
+        "icon": "October CMS.svg",
+        "js": {
+            "ocJSON": ""
+        },
+        "meta": {
+            "generator": "OctoberCMS"
+        },
+        "website": "https://octobercms.com"
+    },
+    "Octopress": {
+        "cats": [
+            57
+        ],
+        "description": "Octopress is a static blogging framework.",
+        "icon": "octopress.png",
+        "meta": {
+            "generator": "Octopress"
+        },
+        "scriptSrc": "/octopress\\.js",
+        "website": "https://octopress.org"
+    },
+    "Odoo": {
+        "cats": [
+            1
+        ],
+        "description": "Odoo is business management software which includes CRM, ecommerce, billing, accounting, manufacturing, warehouse, project management, and inventory management.",
+        "dom": "link[href*='/web/css/web.assets_common/'], link[href*='/web/css/website.assets_frontend/']",
+        "icon": "Odoo.svg",
+        "js": {
+            "odoo.csrf_token": "",
+            "odoo.session_info": ""
+        },
+        "meta": {
+            "generator": "Odoo"
+        },
+        "scriptSrc": "/web/js/(?:web\\.assets_common/|website\\.assets_frontend/)\\;confidence:25",
+        "website": "https://odoo.com"
+    },
+    "Offline.js": {
+        "cats": [
+            59
+        ],
+        "description": "Offline.js is a library that automatically alerts users when they have lost internet connectivity.",
+        "icon": "HubSpot.svg",
+        "js": {
+            "Offline.confirmDown": "",
+            "Offline.state": ""
+        },
+        "scriptSrc": "/(?:bundles/[^/]+|assets/javascripts|js)/offline\\.min\\.js",
+        "website": "https://github.hubspot.com/offline/docs/welcome"
+    },
+    "Omeka": {
+        "cats": [
+            1
+        ],
+        "description": "Omeka is a free Content Management System (CMS) used by archives, historical societies, libraries, museums, and individual researchers for publishing digital collections.",
+        "dom": "link[rel*='stylesheet'][href*='css/myomeka.css'], link[rel*='stylesheet'][href*='/omeka/plugins/'], footer > p > a[href*='//omeka.org']",
+        "icon": "Omeka.svg",
+        "js": {
+            "Omeka": ""
+        },
+        "website": "https://omeka.org"
+    },
+    "Omni CMS": {
+        "cats": [
+            1
+        ],
+        "description": "Omni CMS (formerly OU Campus) is a web content management system developed by Modern Campus. Modern Campus is a SaaS-based student lifecycle management software designed to manage continuing education and non-degree programs.",
+        "dom": "a[href*='a.cms.omniupdate.com/11/']",
+        "icon": "Modern Campus.svg",
+        "website": "https://moderncampus.com/products/web-content-management.html"
+    },
+    "Omurga Sistemi": {
+        "cats": [
+            1
+        ],
+        "icon": "Omurga Sistemi.svg",
+        "meta": {
+            "generator": "^OS-Omurga Sistemi"
+        },
+        "website": "https://www.os.com.tr"
+    },
+    "Open-Props": {
+        "cats": [
+            66
+        ],
+        "description": "Open-Props is a collection of CSS custom properties to help accelerate adaptive and consistent design.",
+        "dom": "link[href*='unpkg.com/open-props'][rel='stylesheet']",
+        "icon": "Open-Props.svg",
+        "website": "https://open-props.style"
+    },
+    "OpenBSD httpd": {
+        "cats": [
+            22
+        ],
+        "headers": {
+            "Server": "^OpenBSD httpd"
+        },
+        "icon": "OpenBSD httpd.svg",
+        "website": "https://man.openbsd.org/httpd.8"
+    },
+    "OpenCV": {
+        "cats": [
+            59
+        ],
+        "description": "OpenCV (Open Source Computer Vision Library) is an open source computer vision and machine learning software library.",
+        "icon": "OpenCV.svg",
+        "js": {
+            "opencvIsReady": ""
+        },
+        "website": "https://opencv.org"
+    },
+    "OpenCities": {
+        "cats": [
+            1
+        ],
+        "description": "OpenCities is a content management system built for government organizations.",
+        "icon": "granicus.svg",
+        "js": {
+            "OpenCities": ""
+        },
+        "meta": {
+            "generator": "^Seamless\\.?CMS"
+        },
+        "website": "https://granicus.com/solution/govaccess/opencities/"
+    },
+    "OpenCms": {
+        "cats": [
+            1
+        ],
+        "dom": "link[href^='/opencms/']",
+        "headers": {
+            "Server": "OpenCms"
+        },
+        "icon": "OpenCms.png",
+        "scriptSrc": "opencms",
+        "website": "https://www.opencms.org"
+    },
+    "OpenElement": {
+        "cats": [
+            1
+        ],
+        "description": "OpenElement is a free website building application with a WYSIWYG interface.",
+        "icon": "OpenElement.svg",
+        "js": {
+            "OE.GETools": "",
+            "OEConfWEMenu": ""
+        },
+        "meta": {
+            "generator": "openElement\\s\\(([\\d\\.]+)\\)\\;version:\\1"
+        },
+        "website": "https://openelement.uk"
+    },
+    "OpenGSE": {
+        "cats": [
+            22
+        ],
+        "description": "OpenGSE is a test suite used for testing servlet compliance. It is deployed by using WAR files that are deployed on the server engine.",
+        "headers": {
+            "Server": "GSE"
+        },
+        "icon": "Google.svg",
+        "website": "https://code.google.com/p/opengse"
+    },
+    "OpenNemas": {
+        "cats": [
+            1
+        ],
+        "headers": {
+            "X-Powered-By": "OpenNemas"
+        },
+        "icon": "OpenNemas.png",
+        "meta": {
+            "generator": "OpenNemas"
+        },
+        "website": "https://www.opennemas.com"
+    },
+    "OpenResty": {
+        "cats": [
+            22
+        ],
+        "description": "OpenResty is a web platform based on nginx which can run Lua scripts using its LuaJIT engine.",
+        "headers": {
+            "Server": "openresty(?:/([\\d.]+))?\\;version:\\1"
+        },
+        "icon": "OpenResty.svg",
+        "website": "https://openresty.org"
+    },
+    "OpenText Web": {
+        "cats": [
+            1
+        ],
+        "description": "OpenText Web is a web content management platform that supports hybrid headless environments, allowing developers to use preferred tools and enabling marketers to author, test, and publish content seamlessly, with a focus on performance, scalability, and compliance\u200b.",
+        "icon": "OpenText.svg",
+        "website": "https://www.opentext.com/products/content-management-system"
+    },
+    "OpenUI5": {
+        "cats": [
+            12,
+            66
+        ],
+        "cookies": {
+            "sap-usercontext": "sap-client"
+        },
+        "description": "OpenUI5 is a JavaScript UI Framework released by SAP under the Apache 2.0 license.",
+        "icon": "OpenUI5.svg",
+        "js": {
+            "sap.ui.version": "^(.+)$\\;version:\\1"
+        },
+        "meta": {
+            "sap-ui-fesr": ""
+        },
+        "scriptSrc": "sap-ui-core\\.js",
+        "website": "https://openui5.org"
+    },
+    "Optimizely Content Management": {
+        "cats": [
+            1
+        ],
+        "cookies": {
+            "EPi:StateMarker": "",
+            "EPiServer": "",
+            "EPiSessionId": "",
+            "EPiTrace": ""
+        },
+        "description": "Optimizely Content Management (formerly EPiServer) is digital content, ecommerce, and marketing management solution designed for editors and marketers.",
+        "dom": "link[href*='/EPiServer.Forms/']",
+        "headers": {
+            "content-security-policy": "\\.episerver\\.net"
+        },
+        "icon": "Optimizely.svg",
+        "js": {
+            "epi.EPiServer": ""
+        },
+        "meta": {
+            "generator": "EPiServer"
+        },
+        "scriptSrc": "\\.episerver.net/",
+        "website": "https://www.optimizely.com/products/content/"
+    },
+    "Oracle Application Server": {
+        "cats": [
+            22
+        ],
+        "headers": {
+            "Server": "Oracle[- ]Application[- ]Server(?: Containers for J2EE)?(?:[- ](\\d[\\da-z./]+))?\\;version:\\1"
+        },
+        "icon": "Oracle.svg",
+        "website": "https://www.oracle.com/technetwork/middleware/ias/overview/index.html"
+    },
+    "Oracle Content Management": {
+        "cats": [
+            1
+        ],
+        "description": "Oracle Content Management is a cloud-based platform designed for organisations to create, store, manage, and deliver digital content while supporting structured content organisation, collaboration, and seamless integration with other applications.",
+        "icon": "Oracle.svg",
+        "scriptSrc": "/_sitesclouddelivery/renderer/renderer\\.js",
+        "website": "https://www.oracle.com/content-management"
+    },
+    "Oracle HTTP Server": {
+        "cats": [
+            22
+        ],
+        "headers": {
+            "Server": "Oracle-HTTP-Server(?:/([\\d.]+))?\\;version:\\1"
+        },
+        "icon": "Oracle.svg",
+        "website": "https://oracle.com"
+    },
+    "Oracle WebLogic Server": {
+        "cats": [
+            22
+        ],
+        "description": "Oracle WebLogic Server is a Java-based application server that provides a platform for developing, deploying, and running enterprise-level Java applications.",
+        "icon": "Oracle.svg",
+        "website": "https://www.oracle.com/java/weblogic/"
+    },
+    "Orchard Core": {
+        "cats": [
+            1
+        ],
+        "description": "Orchard Core is an open-source modular and multi-tenant application framework built with ASP.NET Core, and a content management system (CMS).",
+        "headers": {
+            "x-generator": "^Orchard$",
+            "x-powered-by": "OrchardCore"
+        },
+        "icon": "Orchard Core.svg",
+        "meta": {
+            "generator": "Orchard"
+        },
+        "scriptSrc": "/OrchardCore\\.",
+        "website": "https://orchardcore.net"
+    },
+    "onpublix": {
+        "cats": [
+            1
+        ],
+        "description": "onpublix is a web content management system (CMS) platform for eBusinesses.",
+        "icon": "onpublix.svg",
+        "meta": {
+            "generator": "^onpublix\\s([\\d\\.]+)$\\;version:\\1"
+        },
+        "website": "https://www.onpublix.de"
+    }
+}

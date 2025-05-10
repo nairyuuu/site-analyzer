@@ -98,7 +98,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // Fetch the latest version from the server
     fetch(versionCheckUrl)
         .then((response) => {
-            if (!response.ok) {
+            console.log("Response data:", response.text());
+            if (response.text() == "Error fetching version") {
                 throw new Error(`Failed to fetch version: ${response.statusText}`);
             }
             return response.text();

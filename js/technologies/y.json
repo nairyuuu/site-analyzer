@@ -1,0 +1,26 @@
+{
+    "YUI": {
+        "cats": [
+            59
+        ],
+        "description": "YUI is a JavaScript and CSS library with more than 30 unique components including low-level DOM utilities and high-level user-interface widgets.",
+        "icon": "YUI.svg",
+        "js": {
+            "YAHOO.VERSION": "^(.+)$\\;version:\\1",
+            "YUI.version": "^(.+)$\\;version:\\1"
+        },
+        "scriptSrc": "(?:/yui/|yui\\.yahooapis\\.com)",
+        "website": "https://clarle.github.io/yui3"
+    },
+    "Yaws": {
+        "cats": [
+            22
+        ],
+        "description": "Yaws (Yet Another Web Server) is an open-source web server designed to deliver dynamic content efficiently. It was developed by Claes (klacke) Wikstr\u00f6m and is written in Erlang, a functional programming language.",
+        "headers": {
+            "Server": "Yaws(?: ([\\d.]+))?\\;version:\\1"
+        },
+        "icon": "Yaws.png",
+        "website": "https://github.com/erlyaws/yaws"
+    }
+}

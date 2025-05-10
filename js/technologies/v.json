@@ -1,0 +1,225 @@
+{
+    "V2Board": {
+        "cats": [
+            64
+        ],
+        "description": "V2Board is a multi-agent protocol management system with an interface for managing multiple proxy protocols.",
+        "dom": "link[href*='/theme/v2board/assets/']",
+        "icon": "V2Board.png",
+        "website": "https://v2board.com"
+    },
+    "VIVVO": {
+        "cats": [
+            1
+        ],
+        "cookies": {
+            "VivvoSessionId": ""
+        },
+        "icon": "VIVVO.png",
+        "js": {
+            "vivvo": ""
+        },
+        "website": "https://vivvo.net"
+    },
+    "VKUI": {
+        "cats": [
+            66
+        ],
+        "description": "VKUI is a set of React components with which you can create interfaces that are visually indistinguishable from our iOS and Android applications.",
+        "dom": "html.vkui",
+        "icon": "vk.svg",
+        "website": "https://vkcom.github.io/VKUI"
+    },
+    "Vant": {
+        "cats": [
+            66
+        ],
+        "description": "Vant is a lightweight, customisable Vue UI library for mobile web apps.",
+        "dom": {
+            "link[href*='/npm/vant']": {
+                "attributes": {
+                    "href": "cdn\\.jsdelivr\\.net/npm/vant@([\\d\\.]+)/\\;version:\\1"
+                }
+            },
+            "link[href*='/vant-']": {
+                "attributes": {
+                    "href": "/vant-[\\w\\d]{8}\\.js"
+                }
+            }
+        },
+        "icon": "Vant.svg",
+        "js": {
+            "vant.version": "([\\d\\.]+)\\;version:\\1"
+        },
+        "website": "https://github.com/youzan/vant"
+    },
+    "Varbase": {
+        "cats": [
+            1
+        ],
+        "dom": "meta[content='Varbase'],div[class*='varbase_'],div[class*='_varbase'],div[class*='varbase-'],div[class*='block-varbase'],div[class*='blockvarbase']",
+        "icon": "varbase.svg",
+        "js": {
+            "drupalSettings.ajaxPageState.libraries": ".+varbase_.+"
+        },
+        "website": "https://www.vardot.com/solutions/varbase"
+    },
+    "VerseOne": {
+        "cats": [
+            1
+        ],
+        "description": "VerseOne is a provider of Content Management Systems (CMS) for the healthcare and housing sectors.",
+        "icon": "VerseOne.svg",
+        "meta": {
+            "author": "^Intranet VerseOne$",
+            "generator": "VerseOne (?:ECM|CMS) v([\\d.]+)\\;version:\\1"
+        },
+        "website": "https://www.verseone.com"
+    },
+    "Vigbo": {
+        "cats": [
+            1
+        ],
+        "cookies": {
+            "_gphw_mode": ""
+        },
+        "description": "Vigbo is a platform for building and managing websites and web applications with a focus on user-friendly design and minimal coding.",
+        "dom": "link[href*='.vigbo.com'], link[href*='.gophotoweb.com']",
+        "icon": "vigbo.svg",
+        "scriptSrc": "\\.(?:vigbo|gophotoweb)\\.com/",
+        "website": "https://vigbo.com"
+    },
+    "Vignette": {
+        "cats": [
+            1
+        ],
+        "icon": "Vignette.png",
+        "website": "https://www.vignette.com"
+    },
+    "Vike": {
+        "cats": [
+            12
+        ],
+        "description": "Vike is a framework that enhances Vite applications with server-side rendering (SSR) and static site generation (SSG) capabilities, allowing for flexible integration and progressive enhancement\u200b.",
+        "dom": "script#vike_pageContext",
+        "icon": "Vike.svg",
+        "js": {
+            "__vike": ""
+        },
+        "website": "https://vike.dev"
+    },
+    "VitePress": {
+        "cats": [
+            57
+        ],
+        "description": "VitePress is a Vite & Vue Powered Static Site Generator.",
+        "icon": "vite.svg",
+        "js": {
+            "__VP_HASH_MAP__": ""
+        },
+        "website": "https://vitepress.vuejs.org/"
+    },
+    "Vox Media": {
+        "cats": [
+            1
+        ],
+        "description": "Vox Media is a digital platform that operates news and opinion websites.",
+        "icon": "VoxMedia.svg",
+        "js": {
+            "VoxMediaFontLoader": ""
+        },
+        "scriptSrc": "\\.voxmedia\\.com/",
+        "website": "https://corp.voxmedia.com"
+    },
+    "Vue.js": {
+        "cats": [
+            12
+        ],
+        "description": "Vue.js is an open-source model\u2013view\u2013viewmodel JavaScript framework for building user interfaces and single-page applications.",
+        "dom": ".vue-app, link[href*='docsify/themes/vue.css']",
+        "icon": "vue.svg",
+        "js": {
+            "Vue": "",
+            "Vue.version": "^(.+)$\\;version:\\1",
+            "VueRoot": "",
+            "__VUE_HOT_MAP__": "",
+            "__VUE__": "",
+            "vueDLL": ""
+        },
+        "scriptSrc": [
+            "vue[.-]([\\d.]*\\d)[^/]*\\.js\\;version:\\1",
+            "(?:/([\\d.]+))?/vue(?:\\.min)?\\.js\\;version:\\1"
+        ],
+        "website": "https://vuejs.org"
+    },
+    "VuePress": {
+        "cats": [
+            57
+        ],
+        "description": "VuePress is a static site generator with a Vue-powered theming system, and a default theme for writing technical documentation.",
+        "icon": "VuePress.svg",
+        "js": {
+            "__VUEPRESS__.version": "([\\d\\.]+)\\;version:\\1"
+        },
+        "meta": {
+            "generator": "^VuePress(?: ([0-9.]+)(-[a-z]+.[0-9]+)?)?$\\;version:\\1"
+        },
+        "website": "https://vuepress.vuejs.org/"
+    },
+    "VueStrap": {
+        "cats": [
+            12
+        ],
+        "description": "VueStrap is a collection of Bootstrap components built with Vue.js.",
+        "icon": "vue.svg",
+        "js": {
+            "VueStrap.$": ""
+        },
+        "scriptSrc": "/vue-strap/([\\d\\.]+)/vue-strap\\.min\\.js\\;version:\\1",
+        "website": "https://yuche.github.io/vue-strap"
+    },
+    "Vuetify": {
+        "cats": [
+            66
+        ],
+        "description": "Vuetify is a reusable semantic component framework for Vue.js that aims to provide clean, semantic and reusable components.",
+        "dom": "style#vuetify-theme-stylesheet",
+        "icon": "Vuetify.svg",
+        "website": "https://vuetifyjs.com"
+    },
+    "Vuex": {
+        "cats": [
+            59
+        ],
+        "description": "Vuex is a state management pattern + library for Vue.js applications.",
+        "icon": "vue.svg",
+        "js": {
+            "Vuex.version": "(.*)\\;version:\\1"
+        },
+        "website": "https://vuex.vuejs.org/"
+    },
+    "Vvveb CMS": {
+        "cats": [
+            1
+        ],
+        "description": "Vvveb CMS is user-friendly software for building professional websites, blogs, and ecommerce stores.",
+        "icon": "Vvveb.svg",
+        "js": {
+            "VvvebTheme": ""
+        },
+        "meta": {
+            "author": "^Vvveb$",
+            "name": "^Vvveb$"
+        },
+        "website": "https://www.vvveb.com"
+    },
+    "vxe-table": {
+        "cats": [
+            59
+        ],
+        "description": "vxe-table is a Vue.js based PC form component, support add, delete, change, virtual scroll, lazy load, shortcut menu, data validation, tree structure, print export, form rendering, data paging, virtual list, modal window, custom template, renderer, flexible configuration items, extension interface.",
+        "dom": "div[class*='vxe-table']",
+        "icon": "vxe-table.png",
+        "website": "https://vxetable.cn"
+    }
+}

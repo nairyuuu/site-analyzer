@@ -1,0 +1,94 @@
+{
+    "XAMPP": {
+        "cats": [
+            22
+        ],
+        "icon": "XAMPP.png",
+        "meta": {
+            "author": "Kai Oswald Seidler\\;confidence:10"
+        },
+        "website": "https://www.apachefriends.org/en/xampp.html"
+    },
+    "XOOPS": {
+        "cats": [
+            1
+        ],
+        "icon": "XOOPS.png",
+        "js": {
+            "xoops": ""
+        },
+        "meta": {
+            "generator": "XOOPS"
+        },
+        "website": "https://xoops.org"
+    },
+    "XRegExp": {
+        "cats": [
+            59
+        ],
+        "icon": "XRegExp.png",
+        "js": {
+            "XRegExp.version": "^(.+)$\\;version:\\1"
+        },
+        "scriptSrc": [
+            "xregexp[.-]([\\d.]*\\d)[^/]*\\.js\\;version:\\1",
+            "/([\\d.]+)/xregexp(?:\\.min)?\\.js\\;version:\\1",
+            "xregexp.*\\.js"
+        ],
+        "website": "https://xregexp.com"
+    },
+    "Xajax": {
+        "cats": [
+            59
+        ],
+        "icon": "Xajax.png",
+        "scriptSrc": "xajax_core.*\\.js",
+        "website": "https://xajax-project.org"
+    },
+    "Xano": {
+        "cats": [
+            3
+        ],
+        "description": "Xano is a no-code backend development platform that allows users to build and manage databases, APIs, and server-side logic without writing code.",
+        "icon": "Xano.svg",
+        "js": {
+            "XanoBaseStorage": "",
+            "XanoClient": "",
+            "XanoCookieStorage": ""
+        },
+        "website": "https://www.xano.com"
+    },
+    "Xitami": {
+        "cats": [
+            22
+        ],
+        "headers": {
+            "Server": "Xitami(?:/([\\d.]+))?\\;version:\\1"
+        },
+        "icon": "Xitami.png",
+        "website": "https://xitami.com"
+    },
+    "Xiuno BBS": {
+        "cats": [
+            1,
+            2
+        ],
+        "description": "Xiunobbs is an open-source, lightweight forum software designed for easy community management and customization.",
+        "icon": "Xiuno BBS.svg",
+        "meta": {
+            "author": "XiunoBBS\\s([\\d\\.]+)\\;version:\\1"
+        },
+        "website": "https://xiunobbs.cn"
+    },
+    "XpressEngine": {
+        "cats": [
+            1
+        ],
+        "description": "XpressEngine (XE) is an open-source content management system (CMS) designed for building and managing websites, blogs, and online communities.",
+        "icon": "XpressEngine.svg",
+        "meta": {
+            "generator": "XpressEngine"
+        },
+        "website": "https://www.xpressengine.com/"
+    }
+}

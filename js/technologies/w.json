@@ -1,0 +1,448 @@
+{
+    "W3.CSS": {
+        "cats": [
+            66
+        ],
+        "description": "W3.CSS is a CSS framework developed by the World Wide Web Consortium (W3C), the main international standards organisation for the World Wide Web.",
+        "dom": "link[href*='/w3.css']",
+        "icon": "W3.CSS.svg",
+        "website": "https://www.w3schools.com/w3css/"
+    },
+    "WEBrick": {
+        "cats": [
+            22
+        ],
+        "description": "WEBrick is a lightweight HTTP server library in Ruby, included in the standard library, primarily used for local development and testing of Ruby web applications.",
+        "headers": {
+            "Server": "^WEBrick/([\\d\\.]+)\\;version:\\1"
+        },
+        "icon": "Ruby.svg",
+        "website": "https://docs.ruby-lang.org/en/2.4.0/WEBrick.html"
+    },
+    "WHMCS": {
+        "cats": [
+            1
+        ],
+        "description": "WHMCS is an automation platform that simplifies and automates all aspects of operating an online web hosting and domain registrar business.",
+        "icon": "WHMCS.svg",
+        "js": {
+            "WHMCS": ""
+        },
+        "website": "https://www.whmcs.com"
+    },
+    "Wagtail": {
+        "cats": [
+            1
+        ],
+        "description": "Wagtail is a Django content management system (CMS) focused on flexibility and user experience.",
+        "dom": {
+            "[data-block-key]": {
+                "attributes": {
+                    "data-block-key": "^[a-z0-9]{5}$"
+                }
+            },
+            "[style*='images/']": {
+                "attributes": {
+                    "style": "(?:\\.[a-z]+|/media)(?:/[\\w-]+)?/(?:original_images/[\\w-]+|images/[\\w-.]+\\.(?:(?:fill|max|min)-\\d+x\\d+(?:-c\\d+)?|(?:width|height|scale)-\\d+|original))\\."
+                }
+            },
+            "img[src*='images/']": {
+                "attributes": {
+                    "src": "(?:\\.[a-z]+|/media)(?:/[\\w-]+)?/(?:original_images/[\\w-]+|images/[\\w-.]+\\.(?:(?:fill|max|min)-\\d+x\\d+(?:-c\\d+)?|(?:width|height|scale)-\\d+|original))\\."
+                }
+            },
+            "img[srcset*='images/'], source[srcset*='images/']": {
+                "attributes": {
+                    "srcset": "(?:\\.[a-z]+|/media)(?:/[\\w-]+)?/(?:original_images/[\\w-]+|images/[\\w-.]+\\.(?:(?:fill|max|min)-\\d+x\\d+(?:-c\\d+)?|(?:width|height|scale)-\\d+|original))\\."
+                }
+            },
+            "meta[content*='images/']": {
+                "attributes": {
+                    "content": "(?:\\.[a-z]+|/media)(?:/[\\w-]+)?/(?:original_images/[\\w-]+|images/[\\w-.]+\\.(?:(?:fill|max|min)-\\d+x\\d+(?:-c\\d+)?|(?:width|height|scale)-\\d+|original))\\."
+                }
+            },
+            "style, script": {
+                "text": "(?:\\.[a-z]+|/media)(?:/[\\w-]+)?/(?:original_images/[\\w-]+|images/[\\w-.]+\\.(?:(?:fill|max|min)-\\d+x\\d+(?:-c\\d+)?|(?:width|height|scale)-\\d+|original))\\."
+            },
+            "video[poster*='images/']": {
+                "attributes": {
+                    "poster": "(?:\\.[a-z]+|/media)(?:/[\\w-]+)?/(?:original_images/[\\w-]+|images/[\\w-.]+\\.(?:(?:fill|max|min)-\\d+x\\d+(?:-c\\d+)?|(?:width|height|scale)-\\d+|original))\\."
+                }
+            }
+        },
+        "icon": "Wagtail.svg",
+        "website": "https://wagtail.org"
+    },
+    "Warp": {
+        "cats": [
+            22
+        ],
+        "headers": {
+            "Server": "^Warp/(\\d+(?:\\.\\d+)+)?$\\;version:\\1"
+        },
+        "icon": "Warp.png",
+        "website": "https://www.stackage.org/package/warp"
+    },
+    "WeBlocks": {
+        "cats": [
+            12
+        ],
+        "description": "WeBlocks is an educational platform for creating custom JavaScript and Webflow projects using Blocks.",
+        "icon": "WeBlocks.svg",
+        "scriptSrc": "//weblocks\\.io/",
+        "website": "https://www.weblocks.com"
+    },
+    "WebGUI": {
+        "cats": [
+            1
+        ],
+        "cookies": {
+            "wgSession": ""
+        },
+        "icon": "WebGUI.png",
+        "meta": {
+            "generator": "^WebGUI ([\\d.]+)\\;version:\\1"
+        },
+        "website": "https://www.webgui.org"
+    },
+    "WebNode": {
+        "cats": [
+            1,
+            51
+        ],
+        "cookies": {
+            "_gat_wnd_header": ""
+        },
+        "description": "Webnode is a drag-and-drop online website builder.",
+        "icon": "WebNode.svg",
+        "js": {
+            "wnd.$system": ""
+        },
+        "meta": {
+            "generator": "^Webnode(?:\\s([\\d.]+))?$\\;version:\\1"
+        },
+        "website": "https://www.webnode.com"
+    },
+    "WebSite X5": {
+        "cats": [
+            1,
+            51
+        ],
+        "description": "WebSite X5 is a tools to create and publish websites.",
+        "icon": "WebSite X5.svg",
+        "meta": {
+            "generator": "Incomedia WebSite X5 (\\w+ [\\d.]+)\\;version:\\1"
+        },
+        "website": "https://websitex5.com"
+    },
+    "WebZi": {
+        "cats": [
+            1,
+            51
+        ],
+        "description": "WebZi is a professional website builder.",
+        "icon": "Webzi.svg",
+        "js": {
+            "WebziCart": "",
+            "WebziValidate": ""
+        },
+        "meta": {
+            "generator": "^Webzi\\.ir\\sWebsite\\sBuilder$"
+        },
+        "scriptSrc": "//webzi\\.ir/",
+        "website": "https://webzi.ir"
+    },
+    "Webix": {
+        "cats": [
+            12
+        ],
+        "description": "Webix is a JavaScript UI library that offers over 100 customizable UI components for creating web applications, supporting integration with frameworks like Angular, React, and Vue.js.",
+        "icon": "Webix.svg",
+        "js": {
+            "webix": ""
+        },
+        "scriptSrc": "\\bwebix\\.js",
+        "website": "https://webix.com"
+    },
+    "Weblication": {
+        "cats": [
+            1
+        ],
+        "description": "Weblication is an enterprise-class website content management system developed by Scholl Communications AG in Germany.",
+        "icon": "Weblication.svg",
+        "meta": {
+            "generator": "^Weblication\u00ae CMS$"
+        },
+        "website": "https://weblication.de"
+    },
+    "Weblium": {
+        "cats": [
+            1,
+            6
+        ],
+        "description": "Weblium let's you create a web site or online store without the need for a web developer or designer.",
+        "dom": "link[href*='res2.weblium.site']",
+        "icon": "Weblium.svg",
+        "scriptSrc": "res2\\.weblium\\.site/common/core\\.min\\.js",
+        "website": "https://weblium.com"
+    },
+    "Weblogic Server": {
+        "cats": [
+            22
+        ],
+        "description": "WebLogic Server is an Application Server that runs on a middle tier, between back-end databases and related applications and browser-based thin clients.",
+        "headers": {
+            "Server": "^WebLogic\\sServer\\s([\\d\\.]+)?\\;version:\\1"
+        },
+        "icon": "Oracle.svg",
+        "website": "https://www.oracle.com/java/weblogic"
+    },
+    "Webreed": {
+        "cats": [
+            1
+        ],
+        "cookies": {
+            "webreed_session": ""
+        },
+        "description": "Webreed is a website-based tool designed for managing animal breeding processes.",
+        "icon": "Webreed.svg",
+        "js": {
+            "webreed.tel_view_url": ""
+        },
+        "website": "https://www.webreed.pet"
+    },
+    "WebsPlanet": {
+        "cats": [
+            1
+        ],
+        "icon": "WebsPlanet.png",
+        "meta": {
+            "generator": "WebsPlanet"
+        },
+        "website": "https://websplanet.com"
+    },
+    "WebsiteBaker": {
+        "cats": [
+            1
+        ],
+        "icon": "WebsiteBaker.png",
+        "meta": {
+            "generator": "WebsiteBaker"
+        },
+        "website": "https://websitebaker2.org/en/home.php"
+    },
+    "Webzie": {
+        "cats": [
+            1,
+            6,
+            51
+        ],
+        "description": "Webzie is a website builder optimised for performance.",
+        "icon": "Webzie.svg",
+        "meta": {
+            "generator": "^Webzie\\.com\\sWebsite\\sBuilder$"
+        },
+        "website": "https://www.webzie.com/"
+    },
+    "Weebly": {
+        "cats": [
+            1
+        ],
+        "description": "Weebly is a website and ecommerce service.",
+        "icon": "Weebly.svg",
+        "js": {
+            "_W.configDomain": ""
+        },
+        "scriptSrc": "cdn\\d+\\.editmysite\\.com",
+        "website": "https://www.weebly.com"
+    },
+    "Wijmo": {
+        "cats": [
+            59
+        ],
+        "description": "Wijmo is a JavaScript UI component library built in TypeScript, ideal for developing lightweight, high-speed HTML5/JavaScript applications with no dependencies, and designed for enterprise use.",
+        "icon": "Wijmo.svg",
+        "js": {
+            "wijmo": ""
+        },
+        "scriptSrc": "/Scripts/Acts/Wijmo/wijmo\\.min\\.js\\?v=([\\d]+\\.\\d+)\\;version:\\1",
+        "website": "https://developer.mescius.com/wijmo"
+    },
+    "Wink": {
+        "cats": [
+            26,
+            12
+        ],
+        "description": "Wink Toolkit is a JavaScript toolkit used to build mobile web apps.",
+        "icon": "Wink.png",
+        "js": {
+            "wink.version": "^(.+)$\\;version:\\1"
+        },
+        "scriptSrc": "(?:_base/js/base|wink).*\\.js",
+        "website": "https://winktoolkit.org"
+    },
+    "Winstone Servlet Container": {
+        "cats": [
+            22
+        ],
+        "headers": {
+            "Server": "Winstone Servlet (?:Container|Engine) v?([\\d.]+)?\\;version:\\1",
+            "X-Powered-By": "Winstone(?:\\/([\\d.]+))?\\;version:\\1"
+        },
+        "website": "https://winstone.sourceforge.net"
+    },
+    "Winter CMS": {
+        "cats": [
+            1
+        ],
+        "description": "Winter CMS is an open source content management framework built on the Laravel PHP framework for rapid development.",
+        "icon": "WinterCMS.svg",
+        "meta": {
+            "author": "^Winter CMS$",
+            "generator": "^Winter CMS$"
+        },
+        "website": "https://wintercms.com"
+    },
+    "Wix": {
+        "cats": [
+            1,
+            11
+        ],
+        "cookies": {
+            "Domain": "\\.wix\\.com"
+        },
+        "description": "Wix provides cloud-based web development services, allowing users to create HTML5 websites and mobile sites.",
+        "headers": {
+            "X-Wix-Renderer-Server": "",
+            "X-Wix-Request-Id": "",
+            "X-Wix-Server-Artifact-Id": ""
+        },
+        "icon": "Wix.svg",
+        "js": {
+            "wixBiSession": "",
+            "wixPerformanceMeasurements": ""
+        },
+        "meta": {
+            "generator": "Wix\\.com Website Builder"
+        },
+        "scriptSrc": "static\\.parastorage\\.com",
+        "website": "https://www.wix.com"
+    },
+    "Wolf CMS": {
+        "cats": [
+            1
+        ],
+        "description": "Wolf CMS is an open-source, lightweight content management system written in PHP.",
+        "icon": "Wolf CMS.png",
+        "website": "https://github.com/wolfcms/wolfcms"
+    },
+    "Woltlab Community Framework": {
+        "cats": [
+            1
+        ],
+        "description": "WoltLab Community Framework is a modular and extensible software platform designed for building and managing online communities with features like forums, blogs, and galleries.",
+        "icon": "Woltlab Community Framework.svg",
+        "scriptSrc": "WCF\\..*\\.js",
+        "website": "https://www.woltlab.com"
+    },
+    "WookMark": {
+        "cats": [
+            59
+        ],
+        "description": "WookMark is a plugin for laying out elements of varying heights in a column-based grid.",
+        "icon": "WookMark.svg",
+        "js": {
+            "Wookmark": ""
+        },
+        "scriptSrc": "wookmark\\.min\\.js(?:\\?ver=([\\d\\.]+))?\\;version:\\1",
+        "website": "https://wookmark.com"
+    },
+    "WordPress": {
+        "cats": [
+            1,
+            11
+        ],
+        "description": "WordPress is a free and open-source content management system written in PHP and paired with a MySQL or MariaDB database. Features include a plugin architecture and a template system.",
+        "dom": "div[class*='wp-block-group'] > div[class*='wp-block-']",
+        "headers": {
+            "X-Pingback": "/xmlrpc\\.php$",
+            "link": "rel=\"https://api\\.w\\.org/\""
+        },
+        "icon": "WordPress.svg",
+        "js": {
+            "wp.receiveEmbedMessage": "",
+            "wp_username": ""
+        },
+        "meta": {
+            "generator": "^WordPress(?: ([\\d.]+))?\\;version:\\1",
+            "shareaholic:wp_version": ""
+        },
+        "scriptSrc": [
+            "/wp-(?:content|includes)/",
+            "wp-embed\\.min\\.js"
+        ],
+        "website": "https://wordpress.org"
+    },
+    "Wuilt": {
+        "cats": [
+            1,
+            51
+        ],
+        "description": "Wuilt is the first Arab platform of its kind to help individuals and businesses create ready-made websites and ecommerce stores.",
+        "dom": {
+            "img[src*='wuilt-assets-v']": {
+                "attributes": {
+                    "src": "wuilt-assets-v\\d+-dev\\.s\\d+\\.amazonaws\\.com/"
+                }
+            }
+        },
+        "icon": "Wuilt.svg",
+        "website": "https://wuilt.com"
+    },
+    "Wurfl": {
+        "cats": [
+            59
+        ],
+        "description": "WURFL.js is JavaScript that detects device models of smartphones, tablets, smart TVs and game consoles accessing your website.",
+        "icon": "Wurfl.svg",
+        "js": {
+            "WURFL": ""
+        },
+        "scriptSrc": "\\.wurfl\\.io",
+        "website": "https://web.wurfl.io/"
+    },
+    "web-vitals": {
+        "cats": [
+            59,
+            78
+        ],
+        "description": "The web-vitals JavaScript is a tiny, modular library for measuring all the web vitals metrics on real users.",
+        "icon": "web-vitals.svg",
+        "js": {
+            "webVitals": ""
+        },
+        "scriptSrc": "web-vitals@([\\d.]+)/dist/web-vitals.*\\.js\\;version:\\1",
+        "website": "https://github.com/GoogleChrome/web-vitals"
+    },
+    "webEdition": {
+        "cats": [
+            1
+        ],
+        "icon": "webEdition.png",
+        "meta": {
+            "DC.title": "webEdition",
+            "generator": "webEdition"
+        },
+        "website": "https://webedition.de/en"
+    },
+    "wisyCMS": {
+        "cats": [
+            1
+        ],
+        "icon": "wisyCMS.svg",
+        "meta": {
+            "generator": "^wisy CMS[ v]{0,3}([0-9.,]*)\\;version:\\1"
+        },
+        "website": "https://wisy.3we.de"
+    }
+}

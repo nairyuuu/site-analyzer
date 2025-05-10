@@ -1,0 +1,185 @@
+{
+    "UIKit": {
+        "cats": [
+            66
+        ],
+        "description": "UIKit is the framework used for developing iOS applications.",
+        "icon": "UIKit.svg",
+        "scriptSrc": "uikit.*\\.js",
+        "website": "https://getuikit.com"
+    },
+    "UMI.CMS": {
+        "cats": [
+            1
+        ],
+        "description": "UMI.CMS is a content management system (CMS) that provides tools for creating and managing websites, including features for design customization, content management, and site optimization.",
+        "headers": {
+            "X-Generated-By": "UMI\\.CMS"
+        },
+        "icon": "UMI.CMS.svg",
+        "website": "https://www.umi-cms.ru"
+    },
+    "UNA CMS": {
+        "cats": [
+            1
+        ],
+        "description": "UNA CMS is an open-source platform designed for building social networking sites and online communities with a modular architecture, responsive design, and robust privacy features.",
+        "icon": "Una CMS.svg",
+        "js": {
+            "BxArtificerMenuMoreAuto": "",
+            "bx_autocomplete_fields": "",
+            "bx_redirect_for_external_links": "",
+            "bx_search_extnded_sort": "",
+            "bx_site_search_complet": ""
+        },
+        "website": "https://unacms.com"
+    },
+    "USWDS": {
+        "cats": [
+            66
+        ],
+        "description": "USWDS is a design system for the federal government.",
+        "icon": "USWDS.svg",
+        "js": {
+            "uswdsPresent": ""
+        },
+        "scriptSrc": "\\buswds\\b",
+        "website": "https://designsystem.digital.gov"
+    },
+    "Umbraco": {
+        "cats": [
+            1
+        ],
+        "cookies": {
+            "merchello": "\\;version:7"
+        },
+        "description": "Umbraco is an open-source Microsoft ASP.NET based content management system.",
+        "dom": [
+            "script[src*='/UmbracoForms/']",
+            "a[data-udi^='umb://']",
+            "form[action^='/umbraco/Surface/']",
+            "a[href^='/umbraco/Surface/']",
+            "fieldset.umbraco-forms-fieldset"
+        ],
+        "headers": {
+            "X-Umbraco-Version": "^(.+)$\\;version:\\1"
+        },
+        "icon": "Umbraco.svg",
+        "js": {
+            "ITEM_INFO_SERVICE": "",
+            "UC_IMAGE_SERVICE": "",
+            "UC_ITEM_INFO_SERVICE": "",
+            "UC_SETTINGS": "",
+            "Umbraco": ""
+        },
+        "meta": {
+            "generator": "umbraco"
+        },
+        "website": "https://umbraco.com/"
+    },
+    "UmiJs": {
+        "cats": [
+            12
+        ],
+        "description": "UmiJs is a scalable, enterprise-class frontend application framework that supports both configuration and conventional routing while maintaining functional completeness, such as dynamic routing, nested routing, and permission routing.",
+        "icon": "UmiJs.svg",
+        "js": {
+            "g_umi.version": "([\\d\\.]+)\\;version:\\1"
+        },
+        "scriptSrc": "/umi(\\.[\\w\\d]{8})?\\.js",
+        "website": "https://umijs.org"
+    },
+    "Underscore.js": {
+        "cats": [
+            59
+        ],
+        "description": "Underscore.js is a JavaScript library which provides utility functions for common programming tasks. It is comparable to features provided by Prototype.js and the Ruby language, but opts for a functional programming design instead of extending object prototypes.",
+        "icon": "Underscore.js.png",
+        "js": {
+            "_.VERSION": "^(.+)$\\;confidence:0\\;version:\\1",
+            "_.restArguments": ""
+        },
+        "scriptSrc": "underscore.*\\.js(?:\\?ver=([\\d.]+))?\\;version:\\1",
+        "website": "https://underscorejs.org"
+    },
+    "Unicorn Platform": {
+        "cats": [
+            1,
+            51
+        ],
+        "description": "Unicorn Platform is a drag and drop website and blog builder for startups, mobile apps, and SaaS.",
+        "icon": "Unicorn Platform.svg",
+        "js": {
+            "unicornplatform": ""
+        },
+        "website": "https://unicornplatform.com"
+    },
+    "UnoCSS": {
+        "cats": [
+            66
+        ],
+        "description": "UnoCSS is instant on-demand Atomic CSS engine.",
+        "dom": {
+            "style[data-unocss]": {
+                "attributes": {
+                    "data-unocss": "([\\d\\.]+)\\;version:\\1"
+                }
+            }
+        },
+        "icon": "UnoCSS.svg",
+        "website": "https://uno.antfu.me/"
+    },
+    "Unpoly": {
+        "cats": [
+            12
+        ],
+        "description": "Unpoly is an unobtrusive Javascript framework for applications that render on the server.",
+        "icon": "Unpoly.svg",
+        "js": {
+            "up.CompilerPass": "\\;confidence:25",
+            "up.framework": "\\;confidence:26",
+            "up.version": "([\\d\\.]+)\\;version:\\1\\;confidence:0"
+        },
+        "scriptSrc": "/unpoly@([\\d\\.]+)/unpoly\\.min\\.js\\;version:\\1",
+        "website": "https://unpoly.com"
+    },
+    "Unstack": {
+        "cats": [
+            1
+        ],
+        "cookies": {
+            "unstack_sid": ""
+        },
+        "description": "Unstack is a no-code CMS enabling the deployment of high-performance ecommerce storefronts and websites without engineering overhead.",
+        "icon": "Unstack.svg",
+        "scriptSrc": "cdn\\.unstack\\.com/",
+        "website": "https://www.unstack.com"
+    },
+    "Ushahidi": {
+        "cats": [
+            1,
+            35
+        ],
+        "cookies": {
+            "ushahidi": ""
+        },
+        "description": "Ushahidi is a tool that collects crowdsourced data and targeted survey responses from multiple data sources.",
+        "icon": "Ushahidi.svg",
+        "js": {
+            "Ushahidi": ""
+        },
+        "scriptSrc": "/js/ushahidi\\.js$",
+        "website": "https://www.ushahidi.com"
+    },
+    "Uvicorn": {
+        "cats": [
+            22
+        ],
+        "description": "Uvicorn is an ASGI server implementation for Python web applications, commonly used with frameworks like FastAPI to enable asynchronous and high-performance handling of web requests.",
+        "headers": {
+            "Server": "uvicorn"
+        },
+        "icon": "uvicorn.svg",
+        "website": "https://www.uvicorn.org"
+    }
+}

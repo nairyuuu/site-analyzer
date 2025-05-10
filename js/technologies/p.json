@@ -1,0 +1,796 @@
+{
+    "PHP-Nuke": {
+        "cats": [
+            1
+        ],
+        "description": "PHP-Nuke is a free, web-based content management system for creating community portals and managing news, originally developed by Francisco Burzi using PHP and MySQL\u200b.",
+        "icon": "PHP-Nuke.svg",
+        "meta": {
+            "generator": "PHP-Nuke"
+        },
+        "website": "https://phpnuke.org"
+    },
+    "PHPBoost": {
+        "cats": [
+            1
+        ],
+        "description": "PHPBoost is an open-source CMS that runs on Linux, Windows Server and macOS using PHP and web servers like Apache, Nginx, or IIS.",
+        "icon": "PHPBoost.svg",
+        "meta": {
+            "generator": "^PHPBoost$"
+        },
+        "website": "https://www.phpboost.com"
+    },
+    "PHPFusion": {
+        "cats": [
+            1
+        ],
+        "description": "PHPFusion is an open-source content management system (CMS) and web application framework written in PHP.",
+        "headers": {
+            "X-PHPFusion": "(.+)$\\;version:\\1",
+            "X-Powered-By": "PHP(?:-)?Fusion (.+)$\\;version:\\1"
+        },
+        "icon": "PHPFusion.svg",
+        "website": "https://phpfusion.com"
+    },
+    "Page.js": {
+        "cats": [
+            59
+        ],
+        "description": "Page.js is a micro client-side router designed to handle client-side routing within web applications.",
+        "js": {
+            "page.Route": ""
+        },
+        "website": "https://github.com/visionmedia/page.js"
+    },
+    "Pagefai CMS": {
+        "cats": [
+            1
+        ],
+        "description": "Pagefai is a cloud-based platform that offers software-as-a-service solutions to businesses, including the Pagefai CMS which provides ecommerce functionality and other business tools.",
+        "headers": {
+            "x-powered-by": "PAGEFAI CMS"
+        },
+        "icon": "Pagefai.png",
+        "website": "https://www.pagefai.com"
+    },
+    "Pagekit": {
+        "cats": [
+            1
+        ],
+        "icon": "Pagekit.png",
+        "meta": {
+            "generator": "Pagekit"
+        },
+        "website": "https://pagekit.com"
+    },
+    "Pagetiger": {
+        "cats": [
+            1
+        ],
+        "description": "Pagetiger is a platform that offers pre-made templates and an in-house creative agency to help users create content quickly and securely.",
+        "icon": "PageTiger.svg",
+        "scriptSrc": "\\.pagetiger\\.com/",
+        "website": "https://www.pagetiger.com"
+    },
+    "Panda CSS": {
+        "cats": [
+            66
+        ],
+        "description": "Panda is a styling engine that generates styling primitives to author atomic CSS and recipes in a type-safe and readable manner.",
+        "icon": "PandaCSS.svg",
+        "website": "https://panda-css.com/"
+    },
+    "Pars Elecom Portal": {
+        "cats": [
+            1
+        ],
+        "headers": {
+            "X-Powered-By": "Pars Elecom Portal"
+        },
+        "icon": "parselecom.png",
+        "meta": {
+            "copyright": "Pars Elecom Portal"
+        },
+        "website": "https://parselecom.net"
+    },
+    "PatientSites": {
+        "cats": [
+            1
+        ],
+        "description": "PatientSites is a provider of lead generation services and website development for physical therapy practices.",
+        "icon": "PatientSites.svg",
+        "scriptSrc": "\\.patientsites\\.com/",
+        "website": "https://www.patientsites.com"
+    },
+    "Payload CMS": {
+        "cats": [
+            1
+        ],
+        "description": "Payload CMS is a headless and extensible JavaScript content management system designed for application development.",
+        "icon": "PayloadCMS.svg",
+        "website": "https://payloadcms.com"
+    },
+    "Paymenter": {
+        "cats": [
+            1,
+            6
+        ],
+        "cookies": {
+            "paymenter_session": ""
+        },
+        "description": "Paymenter is an open-source webshop solution for hosting companies.",
+        "icon": "Paymenter.svg",
+        "website": "https://paymenter.org"
+    },
+    "Pegboard7": {
+        "cats": [
+            1
+        ],
+        "description": "Pegboard7 is an online digital platform that covers ecommerce, marketing, and enterprise WCMS software for medium to corporate clients, providing a range of online tools to support their growth.",
+        "icon": "Pegboard7.svg",
+        "js": {
+            "pegboard": ""
+        },
+        "meta": {
+            "generator": "^Pegboard$"
+        },
+        "scriptSrc": "/pegboard\\.min\\.js",
+        "website": "https://pegboardsoftware.com.au/"
+    },
+    "Peity": {
+        "cats": [
+            59
+        ],
+        "description": "Peity is a jQuery plugin that converts an element's content into a simple mini svg pie, line or bar chart.",
+        "scriptSrc": "jquery\\.peity\\.min\\.js",
+        "website": "https://benpickles.github.io/peity/"
+    },
+    "Pelican": {
+        "cats": [
+            57
+        ],
+        "description": "Pelican is a static site generator written in Python.",
+        "icon": "pelican.svg",
+        "website": "https://getpelican.com"
+    },
+    "PencilBlue": {
+        "cats": [
+            1,
+            11
+        ],
+        "headers": {
+            "X-Powered-By": "PencilBlue"
+        },
+        "icon": "PencilBlue.png",
+        "website": "https://github.com/pencilblue/pencilblue"
+    },
+    "Percussion": {
+        "cats": [
+            1
+        ],
+        "icon": "Percussion.png",
+        "meta": {
+            "generator": "(?:Percussion|Rhythmyx)"
+        },
+        "website": "https://percussion.com"
+    },
+    "Phaser": {
+        "cats": [
+            12
+        ],
+        "icon": "Phaser.png",
+        "js": {
+            "Phaser": "",
+            "Phaser.VERSION": "^(.+)$\\;version:\\1"
+        },
+        "website": "https://phaser.io"
+    },
+    "Phenomic": {
+        "cats": [
+            57
+        ],
+        "description": "Phenomic is a modular website compiler.",
+        "dom": "[id^='phenomic']",
+        "icon": "Phenomic.svg",
+        "scriptSrc": "/phenomic\\.browser\\.[a-f0-9]+\\.js",
+        "website": "https://phenomic.io/"
+    },
+    "Phoenix Site": {
+        "cats": [
+            1
+        ],
+        "cookies": {
+            "phoenix_p_session": ""
+        },
+        "description": "Phoenix Site software has been developed by the Internet Marketing Union and is especially intended for entrepreneurs (without technical knowledge) who want to score better in Google (SEO) and get more leads and customers (conversion) from their website.",
+        "icon": "Phoenix Site.svg",
+        "js": {
+            "phxsite.pages_version": "([\\d\\.]+)\\;version:\\1"
+        },
+        "website": "https://phoenixsite.nl"
+    },
+    "PhotoShelter": {
+        "cats": [
+            1,
+            6
+        ],
+        "description": "PhotoShelter is a cloud storage service that doubles as a website and ecommerce platform for photographers.",
+        "dom": "link[href*='.c.photoshelter.com']",
+        "icon": "PhotoShelter.svg",
+        "scriptSrc": "\\.psecn\\.photoshelter\\.com/",
+        "website": "https://www.photoshelter.com"
+    },
+    "PhotoSwipe": {
+        "cats": [
+            7,
+            59
+        ],
+        "description": "PhotoSwipe is an open-source gallery to support JavaScript-based image zooming.",
+        "icon": "PhotoSwipe.svg",
+        "js": {
+            "PhotoSwipe": "",
+            "PhotoSwipeUI_Default": "",
+            "photoswipeParseHash": ""
+        },
+        "scriptSrc": "photoswipe/([\\d\\.]+)/photoswipe\\.min\\.js\\;version:\\1",
+        "website": "https://photoswipe.com"
+    },
+    "Phusion Passenger": {
+        "cats": [
+            22
+        ],
+        "description": "Phusion Passenger is a free web server and application server with support for Ruby, Python and Node.js.",
+        "headers": {
+            "Server": "Phusion Passenger ([\\d.]+)\\;version:\\1",
+            "X-Powered-By": "Phusion Passenger(?:\\(R\\))? ?([\\d.]+)?\\;version:\\1"
+        },
+        "icon": "Phusion Passenger.svg",
+        "website": "https://phusionpassenger.com"
+    },
+    "Pico CSS": {
+        "cats": [
+            66
+        ],
+        "description": "Pico CSS is a minimal CSS framework for semantic HTML, without using classes.",
+        "dom": "link[href*='/pico.min.css'], link[href*='picocss.com/']",
+        "icon": "Pico CSS.svg",
+        "website": "https://picocss.com"
+    },
+    "Pimcore": {
+        "cats": [
+            1,
+            6
+        ],
+        "description": "Pimcore is an open-source digital platform that aggregates, enriches, and manages enterprise data and provides up-to-date, consistent, and personalised experiences to customers.",
+        "dom": ".pimcore_area_content",
+        "headers": {
+            "X-Powered-By": "^pimcore$"
+        },
+        "icon": "pimcore.svg",
+        "scriptSrc": "/pimcorecore/js/targeting\\.js",
+        "website": "https://pimcore.com/en/digital-experience-platform"
+    },
+    "Pingoteam": {
+        "cats": [
+            1
+        ],
+        "icon": "Pingoteam.svg",
+        "meta": {
+            "designer": "Pingoteam"
+        },
+        "website": "https://www.pingoteam.ir/"
+    },
+    "Pinia": {
+        "cats": [
+            59
+        ],
+        "description": "Pinia is a state management library for Vue.js.",
+        "dom": {
+            "script": {
+                "text": "\"pinia\""
+            }
+        },
+        "icon": "Pinia.svg",
+        "js": {
+            "Pinia.createPinia": "",
+            "__NUXT__.pinia": "",
+            "mount_pinia": "",
+            "pinia.state": ""
+        },
+        "scriptSrc": "/pinia/.+\\.js",
+        "website": "https://pinia.vuejs.org"
+    },
+    "Pixieset Website": {
+        "cats": [
+            1,
+            51
+        ],
+        "description": "Pixieset Website is a space to create your own beautiful photography website.",
+        "icon": "Pixieset.svg",
+        "meta": {
+            "generator": "^Pixieset$"
+        },
+        "website": "https://pixieset.com"
+    },
+    "Pixnet": {
+        "cats": [
+            1
+        ],
+        "description": "Pixnet is an Taiwanese mobile photo sharing, blogging, and social networking service.",
+        "icon": "Pixnet.svg",
+        "js": {
+            "pix.MIB": ""
+        },
+        "website": "https://www.pixnet.net"
+    },
+    "PizzaNetz": {
+        "cats": [
+            1,
+            93
+        ],
+        "description": "PizzaNetz is an ordering system and shop system for pizzerias, Chinese restaurant and kebabs.",
+        "dom": "form[name*='pizzanetz']",
+        "icon": "PizzaNetz.png",
+        "website": "https://www.pizzanetz.de"
+    },
+    "PlatformOS": {
+        "cats": [
+            1,
+            62
+        ],
+        "headers": {
+            "x-powered-by": "^platformOS$"
+        },
+        "icon": "PlatformOS.svg",
+        "website": "https://www.platform-os.com"
+    },
+    "Pligg": {
+        "cats": [
+            1
+        ],
+        "dom": "span[id^='xvotes-0']",
+        "icon": "Pligg.svg",
+        "js": {
+            "pligg_": ""
+        },
+        "meta": {
+            "generator": "Pligg"
+        },
+        "website": "https://pligg.com"
+    },
+    "Plone": {
+        "cats": [
+            1
+        ],
+        "description": "Plone is a free and open source content management system (CMS) built on top of the Zope application server.",
+        "dom": "link[href^='/++resource++']",
+        "icon": "Plone.svg",
+        "meta": {
+            "generator": "Plone"
+        },
+        "scriptSrc": "^/\\+\\+resource\\+\\+",
+        "website": "https://plone.org/"
+    },
+    "Polyfill": {
+        "cats": [
+            59
+        ],
+        "description": "Polyfill is a service which accepts a request for a set of browser features and returns only the polyfills that are needed by the requesting browser.",
+        "icon": "polyfill.svg",
+        "scriptSrc": "polyfill\\.io/v([\\d\\.]+)\\;version:\\1",
+        "website": "https://polyfill.io"
+    },
+    "Polymer": {
+        "cats": [
+            12
+        ],
+        "dom": "link[rel='import'][href*='/polymer.html']",
+        "icon": "Polymer.png",
+        "js": {
+            "Polymer.version": "^(.+)$\\;version:\\1"
+        },
+        "scriptSrc": "polymer\\.js",
+        "website": "https://polymer-project.org"
+    },
+    "Popmenu": {
+        "cats": [
+            1,
+            93
+        ],
+        "cookies": {
+            "Popmenu-Token": ""
+        },
+        "description": "Popmenu is a restaurant platform which offers CMS, online menus, ordering and delivery and marketing automation solutions.",
+        "icon": "Popmenu.svg",
+        "js": {
+            "POPMENU_CLIENT": "",
+            "popmenuHydrated": ""
+        },
+        "website": "https://get.popmenu.com"
+    },
+    "Popmotion": {
+        "cats": [
+            59
+        ],
+        "description": "Popmotion is a collection of low-level JavaScript animation functions and utils for advanced animators.",
+        "icon": "Popmotion.svg",
+        "js": {
+            "popmotion": ""
+        },
+        "scriptSrc": "popmotion\\.global\\.min\\.js(?:\\?ver=\\d+\\.\\d+)?",
+        "website": "https://popmotion.io"
+    },
+    "Portal": {
+        "cats": [
+            1
+        ],
+        "description": "Portal is a platform providing necessary tools for crafting professional websites or online stores, encompassing hosting, domain registration, an intuitive management panel for creating new pages, and ongoing support.",
+        "icon": "Portal.svg",
+        "meta": {
+            "generator": "^Portal Site Builder"
+        },
+        "website": "https://www.portal.ir"
+    },
+    "Posterous": {
+        "cats": [
+            1,
+            11
+        ],
+        "dom": "div[class*='posterous']",
+        "icon": "Posterous.png",
+        "js": {
+            "Posterous": ""
+        },
+        "website": "https://posterous.com"
+    },
+    "Preact": {
+        "cats": [
+            59
+        ],
+        "description": "Preact is a JavaScript library that describes itself as a fast 3kB alternative to React with the same ES6 API.",
+        "dom": {
+            "#app, .app, #root, .root, body, body > *, body > * > *, body > * > * > *": {
+                "properties": {
+                    "__k": ""
+                }
+            }
+        },
+        "icon": "Preact.svg",
+        "website": "https://preactjs.com"
+    },
+    "Prefix-Free": {
+        "cats": [
+            59
+        ],
+        "description": "Prefix-Free is a JavaScript library that automatically removes browser vendor prefixes from CSS properties, enabling developers to use standard CSS without worrying about cross-browser compatibility issues.",
+        "icon": "Prefix-Free.svg",
+        "js": {
+            "PrefixFree": ""
+        },
+        "scriptSrc": "prefixfree\\.js",
+        "website": "https://leaverou.github.io/prefixfree/"
+    },
+    "Preline UI": {
+        "cats": [
+            66
+        ],
+        "description": "Preline UI is an open-source set of prebuilt UI components based on the utility-first Tailwind CSS framework.",
+        "icon": "Preline UI.svg",
+        "scriptSrc": "/preline\\.js",
+        "website": "https://preline.co"
+    },
+    "Prepr": {
+        "cats": [
+            1
+        ],
+        "cookies": {
+            "__prepr_uid": ""
+        },
+        "description": "Prepr is a headless CMS with data-driven capabilities.",
+        "dom": "img[src*='.prepr.io/']",
+        "icon": "Prepr.svg",
+        "js": {
+            "prepr": ""
+        },
+        "meta": {
+            "prepr:id": ""
+        },
+        "scriptSrc": "\\.prepr\\.io/",
+        "website": "https://prepr.io"
+    },
+    "PrimeNG": {
+        "cats": [
+            66
+        ],
+        "description": "PrimeNG is a rich set of open-source UI Components for Angular.",
+        "icon": "PrimeNG.svg",
+        "website": "https://primeng.org"
+    },
+    "PrimeReact": {
+        "cats": [
+            66
+        ],
+        "description": "PrimeReact is a rich set of open-source UI Components for React.",
+        "icon": "PrimeReact.svg",
+        "website": "https://primereact.org"
+    },
+    "PrimeVue": {
+        "cats": [
+            66
+        ],
+        "description": "PrimeVue is a rich set of open-source UI Components for Vue.js.",
+        "dom": "style[data-primevue-style-id]",
+        "icon": "PrimeVue.svg",
+        "website": "https://primevue.org"
+    },
+    "Prismic": {
+        "cats": [
+            1
+        ],
+        "description": "Prismic is a headless CMS for Jamstack.",
+        "dom": "img[src*='images.prismic.io']",
+        "icon": "Prismic.svg",
+        "scriptSrc": "\\.prismic\\.io/",
+        "website": "https://prismic.io"
+    },
+    "ProcessWire": {
+        "cats": [
+            1
+        ],
+        "description": "ProcessWire is an open source content management system (CMS) and framework (CMF).",
+        "headers": {
+            "X-Powered-By": "ProcessWire CMS"
+        },
+        "icon": "ProcessWire.svg",
+        "js": {
+            "ProcessWire": ""
+        },
+        "website": "https://processwire.com/"
+    },
+    "Procurios": {
+        "cats": [
+            1
+        ],
+        "description": "Procurios is a provider of software solutions tailored to nonprofit and member organizations, offering website management, fundraising, CRM, and event tools.",
+        "icon": "Procurios.svg",
+        "meta": {
+            "generator": "^Procurios$"
+        },
+        "website": "https://www.procurios.com"
+    },
+    "Progress Sitefinity": {
+        "cats": [
+            1
+        ],
+        "description": "Progress Sitefinity is a content management system (CMS) that you use to create, store, manage, and present content on your website.",
+        "icon": "Sitefinity.svg",
+        "js": {
+            "sfDataIntell": ""
+        },
+        "meta": {
+            "generator": "^Sitefinity\\s([\\S]{3,9})\\;version:\\1"
+        },
+        "website": "https://www.sitefinity.com"
+    },
+    "Prototype": {
+        "cats": [
+            12
+        ],
+        "description": "Prototype is a JavaScript Framework that aims to ease development of web applications.",
+        "icon": "Prototype.png",
+        "js": {
+            "Prototype.Version": "^(.+)$\\;version:\\1"
+        },
+        "scriptSrc": "(?:prototype|protoaculous)(?:-([\\d.]*[\\d]))?.*\\.js\\;version:\\1",
+        "website": "https://www.prototypejs.org"
+    },
+    "Proximis Unified Commerce": {
+        "cats": [
+            1,
+            6
+        ],
+        "dom": "html[data-ng-app*='RbsChangeApp']",
+        "icon": "ProximisOmnichannel.svg",
+        "js": {
+            "__change": ""
+        },
+        "meta": {
+            "generator": "Proximis Unified Commerce"
+        },
+        "website": "https://www.proximis.com"
+    },
+    "PubLive": {
+        "cats": [
+            1
+        ],
+        "description": "PubLive is a headless CMS for online publishers.",
+        "dom": "link[href*='.thepublive.com/'], img[src*='.thepublive.com/']",
+        "icon": "PubLive.svg",
+        "website": "https://thepublive.com"
+    },
+    "PubSubJS": {
+        "cats": [
+            59
+        ],
+        "description": "PubSubJS is a topic-based publish/subscribe library written in JavaScript.",
+        "icon": "pubsub-js.png",
+        "js": {
+            "PubSub": "",
+            "PubSub.version": "^(.+)$\\;version:\\1"
+        },
+        "website": "https://github.com/mroderick/PubSubJS"
+    },
+    "Public CMS": {
+        "cats": [
+            1
+        ],
+        "cookies": {
+            "PUBLICCMS_USER": ""
+        },
+        "description": "Public CMS is a content management system (CMS) designed to help users create, manage, and maintain websites with features for content editing, template customization, and user management.",
+        "headers": {
+            "X-Powered-PublicCMS": "^(.+)$\\;version:\\1"
+        },
+        "icon": "Public CMS.svg",
+        "website": "https://www.publiccms.com"
+    },
+    "Publishrr": {
+        "cats": [
+            1
+        ],
+        "description": "Publishrr is a custom web CMS designed for newspapers, magazines, TV channels, and radio channels.",
+        "icon": "Publishrr.svg",
+        "meta": {
+            "generator": "^Publishrr\\.com$"
+        },
+        "website": "https://publishrr.com"
+    },
+    "Pulse CMS": {
+        "cats": [
+            1
+        ],
+        "description": "Pulse CMS is a content management system built with PHP that uses flat files instead of a database, offering a platform for managing web content without requiring extensive server resources or technical expertise.",
+        "icon": "Pulse.svg",
+        "scriptSrc": "/PulseCMS/.*?/tracker\\.php",
+        "website": "https://pulsecms.com"
+    },
+    "Pure CSS": {
+        "cats": [
+            66
+        ],
+        "description": "Pure CSS is a set of small, responsive CSS modules that can be used in web projects.",
+        "dom": "link[href*='pure.css'], link[href*='pure-min.css'], div[class*='pure-u-']",
+        "icon": "Pure CSS.svg",
+        "website": "https://purecss.io"
+    },
+    "PyroCMS": {
+        "cats": [
+            1
+        ],
+        "cookies": {
+            "pyrocms": ""
+        },
+        "description": "PyroCMS is an open-source content management system (CMS) built on the Laravel framework, designed for creating and managing websites with a focus on flexibility, modularity, and ease of use.",
+        "headers": {
+            "X-Streams-Distribution": "PyroCMS"
+        },
+        "icon": "PyroCMS.svg",
+        "website": "https://pyrocms.com"
+    },
+    "p5.js": {
+        "cats": [
+            59
+        ],
+        "description": "p5.js is a JavaScript library for creative coding, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners, and anyone else.",
+        "icon": "p5.js.svg",
+        "js": {
+            "p5.Camera": "",
+            "p5.ColorConversion": ""
+        },
+        "website": "https://p5js.org"
+    },
+    "papaya CMS": {
+        "cats": [
+            1
+        ],
+        "dom": "link[href*='papaya-themes']",
+        "icon": "papaya CMS.png",
+        "website": "https://papaya-cms.com"
+    },
+    "phpCMS": {
+        "cats": [
+            1
+        ],
+        "icon": "PHP.svg",
+        "js": {
+            "phpcms": ""
+        },
+        "website": "https://phpcms.de"
+    },
+    "phpMyAdmin": {
+        "cats": [
+            3
+        ],
+        "description": "PhpMyAdmin is a free and open-source administration tool for MySQL and MariaDB.",
+        "dom": "link[href*='phpmyadmin.css.php']",
+        "headers": {
+            "Set-Cookie": "phpMyAdmin_https"
+        },
+        "icon": "phpMyAdmin.svg",
+        "js": {
+            "pma_absolute_uri": ""
+        },
+        "website": "https://www.phpmyadmin.net"
+    },
+    "phpPgAdmin": {
+        "cats": [
+            3
+        ],
+        "description": "phpPgAdmin is a web-based administration tool for managing PostgreSQL databases.",
+        "icon": "phpPgAdmin.svg",
+        "website": "https://phppgadmin.sourceforge.net"
+    },
+    "phpRS": {
+        "cats": [
+            1
+        ],
+        "description": "phpRS is a content management software written in PHP.",
+        "dom": {
+            "a[href*='.php']": {
+                "attributes": {
+                    "href": "search\\.php\\?.+all-phpRS-all"
+                }
+            }
+        },
+        "icon": "default.svg",
+        "meta": {
+            "generator": "^phpRS$"
+        },
+        "website": "https://phprs.net"
+    },
+    "phpSQLiteCMS": {
+        "cats": [
+            1
+        ],
+        "icon": "phpSQLiteCMS.png",
+        "meta": {
+            "generator": "^phpSQLiteCMS(?: (.+))?$\\;version:\\1"
+        },
+        "website": "https://phpsqlitecms.net"
+    },
+    "phpwind": {
+        "cats": [
+            1,
+            2
+        ],
+        "icon": "phpwind.png",
+        "meta": {
+            "generator": "^phpwind(?: v([0-9-]+))?\\;version:\\1"
+        },
+        "website": "https://www.phpwind.net"
+    },
+    "pirobase CMS": {
+        "cats": [
+            1
+        ],
+        "dom": "script[src*='/site/'][src*='/resourceCached/'], link[href*='/site/'][href*='/resourceCached/']",
+        "icon": "pirobaseCMS.svg",
+        "website": "https://www.pirobase-imperia.com/de/produkte/produktuebersicht/pirobase-cms"
+    },
+    "prettyPhoto": {
+        "cats": [
+            59
+        ],
+        "dom": "link[href*='prettyPhoto.css'], link[href*='prettyPhoto.min.css'], a[rel='prettyPhoto']",
+        "icon": "prettyPhoto.png",
+        "js": {
+            "pp_alreadyInitialized": "",
+            "pp_descriptions": "",
+            "pp_images": "",
+            "pp_titles": ""
+        },
+        "scriptSrc": "jquery\\.prettyPhoto\\.js",
+        "website": "https://no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/"
+    }
+}

@@ -1,0 +1,734 @@
+{
+    "MAAK": {
+        "cats": [
+            1
+        ],
+        "description": "MAAK is a Laravel based CMS developed by Mahdi Akbari.",
+        "icon": "MAAK.png",
+        "meta": {
+            "author": "^MAAK$"
+        },
+        "website": "https://maak-code.ir"
+    },
+    "MATORI.NET": {
+        "cats": [
+            64
+        ],
+        "description": "MATORI.NET is a fully managed reverse proxy.",
+        "headers": {
+            "X-Powered-By": "MATORI.NET"
+        },
+        "website": "https://matori.net"
+    },
+    "MDBootstrap": {
+        "cats": [
+            66
+        ],
+        "description": "MDBootstrap (Material Design for Bootstrap) is a complete UI package that can be integrated with other frameworks such as Angular, React, Vue, etc. It is used to design a fully responsive and mobile-friendly layout using various components, plugins, animation.",
+        "icon": "MDBootstrap.svg",
+        "js": {
+            "mdb.ScrollSpy": ""
+        },
+        "scriptSrc": "(?:/mdbootstrap/([\\d\\.]+)/)?js/mdb\\.min\\.js\\;version:\\1",
+        "website": "https://mdbootstrap.com"
+    },
+    "MDUI": {
+        "cats": [
+            66
+        ],
+        "description": "MDUI is a CSS Framework based on material design.",
+        "icon": "MDUI.svg",
+        "js": {
+            "_mduiEventId": "",
+            "mdui.Drawer": ""
+        },
+        "website": "https://www.mdui.org"
+    },
+    "MGPanel": {
+        "cats": [
+            1
+        ],
+        "description": "MGPanel has it all, a content management system that gives programmers the freedom to create professional web pages from scratch, also providing their clients with a self-managing platform.",
+        "icon": "MGPanel.png",
+        "scriptSrc": "\\.mgpanel\\.org/",
+        "website": "https://mgpanel.org"
+    },
+    "MODX": {
+        "cats": [
+            1
+        ],
+        "description": "MODX (originally MODx) is an open source content management system and web application framework for publishing content on the World Wide Web and intranets.",
+        "dom": "form[id*='ajaxSearch_form'], input[id*='ajaxSearch_input']",
+        "headers": {
+            "X-Powered-By": "^MODX"
+        },
+        "icon": "MODX.svg",
+        "js": {
+            "MODX": "",
+            "MODX_MEDIA_PATH": ""
+        },
+        "meta": {
+            "generator": "MODX[^\\d.]*([\\d.]+)?\\;version:\\1"
+        },
+        "scriptSrc": "/assets/components/templates/\\;confidence:50",
+        "website": "https://modx.com/content-management-framework"
+    },
+    "MUI": {
+        "cats": [
+            66
+        ],
+        "description": "MUI(formerly Material UI) is a simple and customisable component library to build faster, beautiful, and more accessible React applications.",
+        "dom": "style[data-meta='MuiPaper'], div.MuiBox-root, div.MuiPaper-root, style[data-meta='MuiButton'], input.MuiInputBase-input, div.MuiContainer-root",
+        "icon": "MUI.svg",
+        "website": "https://mui.com"
+    },
+    "Magic UI": {
+        "cats": [
+            66
+        ],
+        "description": "Magic UI is a UI library featuring open-source animated components built with React, TypeScript, Tailwind CSS, and Framer Motion.",
+        "dom": "iframe[src*='.magicui.design'],a[href*='magicui.design'] > video[src*='cdn.magicui.design']",
+        "icon": "MagicUI.svg",
+        "website": "https://magicui.design/"
+    },
+    "Maglr": {
+        "cats": [
+            1
+        ],
+        "description": "Maglr is a no-code design platform for creating interactive visual stories.",
+        "icon": "Maglr.svg",
+        "js": {
+            "maglr_pirsch": ""
+        },
+        "scriptSrc": "system\\.maglr\\.com/[^?]+\\?v=([\\d.]+)\\;version:\\1",
+        "website": "https://www.maglr.com"
+    },
+    "Magnolia CMS": {
+        "cats": [
+            1
+        ],
+        "description": "Magnolia CMS is a Java-based, open-source content management system that employs a modular architecture and JCR (Java Content Repository) standards, facilitating the creation, storage, and retrieval of digital content within a customisable framework.",
+        "headers": {
+            "x-magnolia-registration": ""
+        },
+        "icon": "Magnolia CMS.svg",
+        "website": "https://www.magnolia-cms.com"
+    },
+    "Maisey": {
+        "cats": [
+            1
+        ],
+        "description": "Maisey is a website builder for churches.",
+        "dom": "script[data-cb-site='maisey']",
+        "icon": "Maisey.svg",
+        "website": "https://www.maisey.co"
+    },
+    "Mambo": {
+        "cats": [
+            1
+        ],
+        "icon": "Mambo.png",
+        "meta": {
+            "generator": "Mambo"
+        },
+        "website": "https://mambo-foundation.org"
+    },
+    "Mantine": {
+        "cats": [
+            66
+        ],
+        "description": "Mantine is an open-source UI framework and component library for React.",
+        "dom": "style[data-emotion='mantine-global'], style[data-emotion='mantine'], html[data-mantine-color-scheme]",
+        "icon": "Mantine.svg",
+        "website": "https://mantine.dev"
+    },
+    "Marionette.js": {
+        "cats": [
+            12
+        ],
+        "description": "Marionette is a composite application library for Backbone.js that aims to simplify the construction of large scale JavaScript applications. It is a collection of common design and implementation patterns found in applications.",
+        "icon": "Marionette.js.svg",
+        "js": {
+            "Marionette": "",
+            "Marionette.VERSION": "^(.+)$\\;version:\\1"
+        },
+        "scriptSrc": "backbone\\.marionette.*\\.js",
+        "website": "https://marionettejs.com"
+    },
+    "Marked": {
+        "cats": [
+            59
+        ],
+        "icon": "Marked.svg",
+        "js": {
+            "marked": ""
+        },
+        "scriptSrc": "/marked(?:\\.min)?\\.js",
+        "website": "https://marked.js.org"
+    },
+    "Marketpath CMS": {
+        "cats": [
+            1
+        ],
+        "cookies": {
+            "_mp_permissions": "^session\\^"
+        },
+        "description": "Marketpath CMS is a hosted website content management system used by businesses, churches and schools.",
+        "icon": "Marketpath CMS.png",
+        "website": "https://www.marketpath.com"
+    },
+    "Marko": {
+        "cats": [
+            18,
+            66
+        ],
+        "description": "Marko is HTML re-imagined as a language for building dynamic and reactive user interfaces.",
+        "dom": "#data-marko-key, html[data-framework='marko']",
+        "icon": "Marko.svg",
+        "js": {
+            "markoComponent": "",
+            "markoSections": "",
+            "markoVars": ""
+        },
+        "website": "https://markojs.com"
+    },
+    "Material Design Lite": {
+        "cats": [
+            66
+        ],
+        "description": "Material Design Lite is a library of components for web developers.",
+        "icon": "Material Design Lite.svg",
+        "js": {
+            "MaterialButton": "",
+            "MaterialIconToggle": "",
+            "MaterialLayout": ""
+        },
+        "scriptSrc": "(?:/([\\d.]+))?/material(?:\\.min)?\\.js\\;version:\\1",
+        "website": "https://getmdl.io"
+    },
+    "Materialize CSS": {
+        "cats": [
+            66
+        ],
+        "description": "Materialize CSS is a front-end framework that helps developers create responsive and mobile-first web applications. It is based on Google's Material Design guidelines.",
+        "dom": "link[href*='/materialize.min.css']",
+        "icon": "Materialize CSS.svg",
+        "scriptSrc": "([\\d\\.]+)/.*/materialize\\.min\\.js\\;version:\\1",
+        "website": "https://materializecss.com"
+    },
+    "Matter.js": {
+        "cats": [
+            59
+        ],
+        "description": "Matter.js is a JavaScript 2D rigid body physics engine for the web.",
+        "icon": "MatterJs.svg",
+        "js": {
+            "Matter.version": "^(.+)$\\;version:\\1"
+        },
+        "scriptSrc": "js/matter\\.js",
+        "website": "https://brm.io/matter-js"
+    },
+    "Mavo": {
+        "cats": [
+            59
+        ],
+        "description": "Mavo is a JavaScript library that enables web developers to turn regular HTML into reactive web applications without the need for writing custom JavaScript.",
+        "icon": "Mavo.svg",
+        "js": {
+            "Mavo": "",
+            "Mavo.version": "v([\\d\\.]+)\\;version:\\1"
+        },
+        "website": "https://mavo.io"
+    },
+    "MaxSite CMS": {
+        "cats": [
+            1
+        ],
+        "description": "MaxSite CMS is a PHP-based content management system from Ukraine.",
+        "icon": "MaxSite CMS.svg",
+        "meta": {
+            "generator": "MaxSite CMS"
+        },
+        "website": "https://max-3000.com"
+    },
+    "MaxenceDEVCMS": {
+        "cats": [
+            1
+        ],
+        "description": "MaxenceDEVCMS is a simple CMS for ecommerce, esport, landing page.",
+        "icon": "default.svg",
+        "meta": {
+            "author": "^MaxenceDEV$"
+        },
+        "website": "https://cms.maxencedev.fr"
+    },
+    "Megagroup CMS.S3": {
+        "cats": [
+            1
+        ],
+        "description": "Megagroup CMS.S3 management system is provided not as a \u201cboxed product\u201d, but as a separate service, that is, it works using SaaS technology. This means that you manage your site directly through your browser using an intuitive interface.",
+        "icon": "Megagroup.svg",
+        "js": {
+            "megacounter_key": ""
+        },
+        "website": "https://megagroup.ru/cms"
+    },
+    "Melis Platform": {
+        "cats": [
+            1,
+            6,
+            11,
+            32
+        ],
+        "icon": "melis-platform.svg",
+        "meta": {
+            "generator": "^Melis Platform\\.",
+            "powered-by": "^Melis CMS\\."
+        },
+        "website": "https://www.melistechnology.com/"
+    },
+    "MemberStack": {
+        "cats": [
+            1
+        ],
+        "cookies": {
+            "memberstack": ""
+        },
+        "description": "MemberStack is a no-code membership platform for Webflow.",
+        "icon": "MemberStack.svg",
+        "js": {
+            "MemberStack": ""
+        },
+        "scriptSrc": "memberstack\\.js",
+        "website": "https://www.memberstack.io"
+    },
+    "Meteor": {
+        "cats": [
+            12,
+            18
+        ],
+        "description": "Meteor is a JavaScript-based platform used for developing web and mobile applications with a unified language across all layers of the application stack.",
+        "dom": "link.__meteor-css__",
+        "icon": "Meteor.svg",
+        "js": {
+            "Meteor": "",
+            "Meteor.release": "^METEOR@([\\d.]+)\\;version:\\1"
+        },
+        "website": "https://www.meteor.com"
+    },
+    "Methode": {
+        "cats": [
+            1
+        ],
+        "icon": "Methode.png",
+        "meta": {
+            "eomportal-id": "\\d+",
+            "eomportal-instanceid": "\\d+",
+            "eomportal-lastUpdate": "",
+            "eomportal-loid": "[\\d.]+",
+            "eomportal-uuid": "[a-f\\d]+"
+        },
+        "website": "https://www.eidosmedia.com/"
+    },
+    "MetroUI": {
+        "cats": [
+            66
+        ],
+        "description": "MetroUI is an open-source frontend toolkit inspired by Microsoft Fluent (former Metro) design principles.",
+        "dom": {
+            "link[href*='//cdn.metroui.org.ua/']": {
+                "attributes": {
+                    "href": "//cdn\\.metroui\\.org\\.ua/v([\\d\\.]+)/\\;version:\\1"
+                }
+            }
+        },
+        "icon": "default.svg",
+        "js": {
+            "Metro.version": "^([\\d\\.]+)$\\;version:\\1"
+        },
+        "website": "https://github.com/olton/Metro-UI-CSS"
+    },
+    "Microsoft Authentication": {
+        "cats": [
+            69,
+            59
+        ],
+        "description": "The Microsoft Authentication Library for JavaScript enables both client-side and server-side JavaScript applications to authenticate users using Azure AD for work and school accounts (AAD), Microsoft personal accounts (MSA), and social identity providers like Facebook, Google, LinkedIn, Microsoft accounts, etc. through Azure AD B2C service.",
+        "icon": "Microsoft.svg",
+        "js": {
+            "Msal.Authority": "",
+            "msal.authorityInstance": "",
+            "msalConfig.auth": ""
+        },
+        "website": "https://github.com/AzureAD/microsoft-authentication-library-for-js"
+    },
+    "Microsoft HTTPAPI": {
+        "cats": [
+            22
+        ],
+        "description": "Microsoft HTTPAPI is a kernel-mode HTTP driver in the Windows operating system responsible for handling HTTP requests and responses with efficiency, scalability, and security.",
+        "headers": {
+            "Server": "Microsoft-HTTPAPI(?:/([\\d.]+))?\\;version:\\1"
+        },
+        "icon": "Microsoft.svg",
+        "website": "https://learn.microsoft.com/en-us/windows/win32/http/http-api-start-page"
+    },
+    "Microsoft SharePoint": {
+        "cats": [
+            1
+        ],
+        "description": "SharePoint is a cloud-based collaborative platform to manage and share content.",
+        "headers": {
+            "MicrosoftSharePointTeamServices": "^(.+)$\\;version:\\1",
+            "SPRequestGuid": "",
+            "SharePointHealthScore": "",
+            "X-SharePointHealthScore": ""
+        },
+        "icon": "Microsoft SharePoint.svg",
+        "js": {
+            "SPDesignerProgID": "",
+            "_spBodyOnLoadCalled": ""
+        },
+        "meta": {
+            "generator": "Microsoft SharePoint"
+        },
+        "website": "https://sharepoint.microsoft.com"
+    },
+    "Milestone CMS": {
+        "cats": [
+            1
+        ],
+        "description": "Milestone CMS is a SEO-first CMS that offers built-in advanced schema markups and Core Web Vitals conformance for improved search performance.",
+        "icon": "Milestone.svg",
+        "meta": {
+            "generator": "^Milestone\\sCMS\\s([\\d\\.]+)$\\;version:\\1"
+        },
+        "website": "https://www.milestoneinternet.com/products/milestone-cms"
+    },
+    "Milligram": {
+        "cats": [
+            66
+        ],
+        "description": "Milligram is a minimalist CSS framework designed to provide a base for web development projects.",
+        "dom": "link[href*='milligram.css'], link[href*='milligram.min.css']",
+        "icon": "Milligram.svg",
+        "website": "https://milligram.io"
+    },
+    "MiniServ": {
+        "cats": [
+            22
+        ],
+        "headers": {
+            "Server": "MiniServ/([\\d\\.]+)\\;version:\\1"
+        },
+        "website": "https://github.com/webmin/webmin/blob/master/miniserv.pl"
+    },
+    "Miniflat": {
+        "cats": [
+            1
+        ],
+        "description": "Miniflat is an Iranian and Persian content management system developed with flat file technology.",
+        "icon": "Miniflat.svg",
+        "meta": {
+            "generator": "^Miniflat$"
+        },
+        "website": "https://miniflat.ir"
+    },
+    "Mintlify": {
+        "cats": [
+            57,
+            4
+        ],
+        "description": "Mintlify is a platform that enables developers to create and maintain documentation for their projects using Markdown format and automatically generate and deploy static websites via a continuous integration and deployment system.",
+        "icon": "Mintlify.svg",
+        "js": {
+            "__NEXT_DATA__.props.pageProps.favicons.browserconfig": "mintlify\\..+\\.amazonaws\\.com"
+        },
+        "website": "https://mintlify.com"
+    },
+    "Mithril.js": {
+        "cats": [
+            12
+        ],
+        "description": "Mithril.js is a lightweight JavaScript framework for building efficient and declarative single-page applications (SPAs).",
+        "icon": "Mithril.js.svg",
+        "scriptSrc": "/mithril(?:\\.min)?\\.js",
+        "website": "https://mithril.js.org"
+    },
+    "MobX": {
+        "cats": [
+            59
+        ],
+        "icon": "MobX.svg",
+        "js": {
+            "__mobxGlobal": "",
+            "__mobxGlobals": "",
+            "__mobxInstanceCount": ""
+        },
+        "scriptSrc": "(?:/([\\d\\.]+))?/mobx(?:\\.[a-z]+){0,2}\\.js(?:$|\\?)\\;version:\\1",
+        "website": "https://mobx.js.org"
+    },
+    "MochiKit": {
+        "cats": [
+            59
+        ],
+        "icon": "MochiKit.png",
+        "js": {
+            "MochiKit": "",
+            "MochiKit.MochiKit.VERSION": "^(.+)$\\;version:\\1"
+        },
+        "scriptSrc": "MochiKit(?:\\.min)?\\.js",
+        "website": "https://mochi.github.io/mochikit/"
+    },
+    "MochiWeb": {
+        "cats": [
+            22
+        ],
+        "headers": {
+            "Server": "MochiWeb(?:/([\\d.]+))?\\;version:\\1"
+        },
+        "website": "https://github.com/mochi/mochiweb"
+    },
+    "Modernizr": {
+        "cats": [
+            59
+        ],
+        "description": "Modernizr is a JavaScript library that detects the features available in a user's browser.",
+        "icon": "Modernizr.svg",
+        "js": {
+            "Modernizr._version": "^(.+)$\\;version:\\1"
+        },
+        "scriptSrc": [
+            "([\\d.]+)?/modernizr(?:\\.([\\d.]+))?.*\\.js\\;version:\\1?\\1:\\2"
+        ],
+        "website": "https://modernizr.com"
+    },
+    "Moguta.CMS": {
+        "cats": [
+            1,
+            6
+        ],
+        "description": "Moguta is a Russian-based ecommerce platform that provides tools and solutions for creating and managing online stores.",
+        "dom": "link[href*='mg-core/'], link[href*='mg-plugins/'], link[href*='mg-templates/']",
+        "icon": "Moguta.CMS.svg",
+        "scriptSrc": "mg-(?:core|plugins|templates)/",
+        "website": "https://moguta.ru"
+    },
+    "Moment Timezone": {
+        "cats": [
+            59
+        ],
+        "description": "Moment Timezone is a library built upon Moment.js, extending its capabilities to handle time zones in JavaScript. It allows developers to parse, manipulate, and display dates and times in various time zones, providing comprehensive support for time zone conversions and adjustments in web applications.",
+        "icon": "Moment Timezone.svg",
+        "scriptSrc": "moment-timezone(?:-data)?(?:\\.min)?\\.js",
+        "website": "https://momentjs.com/timezone/"
+    },
+    "Moment.js": {
+        "cats": [
+            59
+        ],
+        "description": "Moment.js is a free and open-source JavaScript library that removes the need to use the native JavaScript Date object directly.",
+        "icon": "Moment.js.svg",
+        "js": {
+            "moment": "",
+            "moment.version": "^(.+)$\\;version:\\1"
+        },
+        "scriptSrc": "moment(?:\\.min)?\\.js",
+        "website": "https://momentjs.com"
+    },
+    "Mongrel": {
+        "cats": [
+            22
+        ],
+        "headers": {
+            "Server": "Mongrel"
+        },
+        "icon": "Mongrel.png",
+        "website": "https://mongrel2.org"
+    },
+    "Monkey HTTP Server": {
+        "cats": [
+            22
+        ],
+        "headers": {
+            "Server": "Monkey/?([\\d.]+)?\\;version:\\1"
+        },
+        "icon": "Monkey HTTP Server.png",
+        "website": "https://monkey-project.com"
+    },
+    "MooTools": {
+        "cats": [
+            12
+        ],
+        "description": "MooTools is a JavaScript framework that enhances web application development with utilities for DOM manipulation, animations, and AJAX interactions.",
+        "icon": "MooTools.svg",
+        "js": {
+            "MooTools": "",
+            "MooTools.version": "^(.+)$\\;version:\\1"
+        },
+        "scriptSrc": "mootools.*\\.js",
+        "website": "https://mootools.net"
+    },
+    "Moon": {
+        "cats": [
+            12
+        ],
+        "icon": "moon.svg",
+        "scriptSrc": "/moon(?:\\.min)?\\.js$",
+        "website": "https://kbrsh.github.io/moon/"
+    },
+    "MotoCMS": {
+        "cats": [
+            1
+        ],
+        "dom": "link[href*='/mt-content/assets/styles.css']",
+        "icon": "MotoCMS.svg",
+        "scriptSrc": "/mt-includes/js/website(?:assets)?\\.(?:min)?\\.js",
+        "website": "https://motocms.com"
+    },
+    "Movable Type": {
+        "cats": [
+            1
+        ],
+        "icon": "Movable Type.svg",
+        "meta": {
+            "generator": "Movable Type"
+        },
+        "website": "https://movabletype.org"
+    },
+    "Mozard Suite": {
+        "cats": [
+            1
+        ],
+        "icon": "Mozard Suite.svg",
+        "meta": {
+            "author": "Mozard"
+        },
+        "website": "https://mozard.nl"
+    },
+    "MudBlazor": {
+        "cats": [
+            66
+        ],
+        "description": "MudBlazor is a component library for Blazor implementing Material Design.",
+        "dom": "link[href*='/MudBlazor.min.css']",
+        "icon": "Mudblazor.svg",
+        "js": {
+            "mudWindow": ""
+        },
+        "scriptSrc": [
+            "_content/MudBlazor/MudBlazor\\.min\\.js"
+        ],
+        "website": "https://mudblazor.com/"
+    },
+    "Mura CMS": {
+        "cats": [
+            1,
+            11
+        ],
+        "description": "Mura CMS is the cloud-based, API driven, content management platform.",
+        "icon": "Mura CMS.svg",
+        "meta": {
+            "generator": "Mura\\sCMS\\s([\\d\\.]+)\\;version:\\1"
+        },
+        "website": "https://www.getmura.com"
+    },
+    "Mustache": {
+        "cats": [
+            12
+        ],
+        "description": "Mustache is a web template system.",
+        "icon": "Mustache.png",
+        "js": {
+            "Mustache.version": "^(.+)$\\;version:\\1"
+        },
+        "scriptSrc": "mustache(?:\\.min)?\\.js",
+        "website": "https://mustache.github.io"
+    },
+    "Muuri": {
+        "cats": [
+            59
+        ],
+        "description": "Muuri is a JavaScript layout engine that allows you to build all kinds of layouts and make them responsive, sortable, filterable, draggable and/or animated.",
+        "icon": "Muuri.svg",
+        "js": {
+            "Muuri": ""
+        },
+        "website": "https://muuri.dev"
+    },
+    "Mynetcap": {
+        "cats": [
+            1
+        ],
+        "icon": "Mynetcap.png",
+        "meta": {
+            "generator": "Mynetcap"
+        },
+        "website": "https://www.netcap-creation.fr"
+    },
+    "mOxie": {
+        "cats": [
+            59
+        ],
+        "description": "mOxie is a library providing polyfills for XHR2 and File API, ensuring compatibility with older browsers that lack native support.",
+        "js": {
+            "mOxie": "",
+            "moxie": ""
+        },
+        "website": "https://github.com/moxiecode/moxie"
+    },
+    "math.js": {
+        "cats": [
+            59
+        ],
+        "description": "Math.js a JavaScript library that provides a comprehensive set of mathematical functions and capabilities for performing complex calculations and operations in web applications.",
+        "icon": "math.js.svg",
+        "js": {
+            "mathjs": ""
+        },
+        "scriptSrc": "math(?:\\.min)?\\.js",
+        "website": "https://mathjs.org"
+    },
+    "metisMenu": {
+        "cats": [
+            59
+        ],
+        "description": "metisMenu is a collapsible jQuery menu plugin.",
+        "js": {
+            "MetisMenu": "",
+            "metisMenu": ""
+        },
+        "scriptSrc": "(?:/|\\.)metisMenu(?:js)?(?:\\.min)?\\.js(?:\\?([\\d\\.]+))?\\;version:\\1",
+        "website": "https://github.com/onokumus/metismenu"
+    },
+    "microCMS": {
+        "cats": [
+            1
+        ],
+        "description": "microCMS is a Japan-based headless CMS that enables editors and developers to build delicate sites and apps.",
+        "dom": "img[src*='.microcms-assets.io/'], link[href*='.microcms-assets.io/']",
+        "icon": "microCMS.svg",
+        "website": "https://microcms.io"
+    },
+    "miniCal": {
+        "cats": [
+            1
+        ],
+        "description": "miniCal is an open-source property management system.",
+        "icon": "miniCal.svg",
+        "js": {
+            "miniCal.projectUrl": "app\\.minical\\.io"
+        },
+        "website": "https://www.minical.io"
+    },
+    "mini_httpd": {
+        "cats": [
+            22
+        ],
+        "headers": {
+            "Server": "mini_httpd(?:/([\\d.]+))?\\;version:\\1"
+        },
+        "icon": "mini_httpd.png",
+        "website": "https://acme.com/software/mini_httpd"
+    }
+}

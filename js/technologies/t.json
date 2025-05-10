@@ -1,0 +1,413 @@
+{
+    "TDesign": {
+        "cats": [
+            66
+        ],
+        "description": "TDesign launched by Tencent contains rich and reusable design component resources, such as color system, text system, motion design, etc.",
+        "dom": ".t-button__text, .t-layout",
+        "icon": "TDesign.svg",
+        "scriptSrc": "tdesign\\.gtimg\\.com/",
+        "website": "https://tdesign.tencent.com"
+    },
+    "TN Express Web": {
+        "cats": [
+            1
+        ],
+        "cookies": {
+            "TNEW": ""
+        },
+        "description": "Tessitura is an enterprise application to manage activities in ticketing, fundraising, customer relationship management, and marketing.",
+        "icon": "tessitura.svg",
+        "website": "https://www.tessituranetwork.com"
+    },
+    "TYPO3 CMS": {
+        "cats": [
+            1
+        ],
+        "description": "TYPO3 is a free and open-source Web content management system written in PHP.",
+        "dom": "link[href*='typo3conf'], link[href*='typo3temp'], img[src*='typo3conf'], img[src*='typo3temp']",
+        "icon": "TYPO3.svg",
+        "js": {
+            "webpackChunkTYPO3Webpack": ""
+        },
+        "meta": {
+            "generator": "TYPO3\\s+(?:CMS\\s+)?(?:[\\d.]+)?(?:\\s+CMS)?"
+        },
+        "scriptSrc": "^/?typo3(?:conf|temp)/",
+        "website": "https://typo3.org/"
+    },
+    "Tabulator": {
+        "cats": [
+            59
+        ],
+        "description": "Tabulator is a JavaScript tool for creating interactive tables and data grids.",
+        "icon": "Tabulator.svg",
+        "js": {
+            "Tabulator": ""
+        },
+        "website": "https://tabulator.info/"
+    },
+    "Tachyons": {
+        "cats": [
+            66
+        ],
+        "description": "Tachyons is a functional CSS framework.",
+        "dom": {
+            "link[href*='tachyons.min.css']": {
+                "attributes": {
+                    "href": "(?:([\\d\\.]+)(?:/css)?/)?tachyons\\.min\\.css\\;version:\\1"
+                }
+            }
+        },
+        "icon": "Tachyons.svg",
+        "js": {
+            "webpackChunkgatsby_starter_blog_tachyons": ""
+        },
+        "website": "https://tachyons.io"
+    },
+    "Tailwind CSS": {
+        "cats": [
+            66
+        ],
+        "description": "Tailwind is a utility-first CSS framework.",
+        "dom": {
+            "link[rel='stylesheet'][href*='tailwind']": {
+                "attributes": {
+                    "href": "tailwindcss[@|/](?:\\^)?([\\d.]+)(?:/[a-z]+)?/(?:tailwind|base|components|utilities)(?:\\.min)?\\.css\\;version:\\1"
+                }
+            },
+            "style": {
+                "text": "/\\/\\*! tailwindcss v([\\d.]+) \\| MIT License \\| https:\\/\\/tailwindcss\\.com\\*\\/\\;version:\\1"
+            }
+        },
+        "icon": "tailwindcss.svg",
+        "js": {
+            "hexToTailwindColorVar": "",
+            "tailwind": ""
+        },
+        "meta": {
+            "application-name": "^Tailwind CSS$"
+        },
+        "scriptSrc": "\\.tailwindcss(?:tailwind-config-cdn)?\\.(?:com|js)",
+        "website": "https://tailwindcss.com/"
+    },
+    "Telescope": {
+        "cats": [
+            1
+        ],
+        "icon": "Telescope.png",
+        "js": {
+            "Telescope": ""
+        },
+        "website": "https://telescopeapp.org"
+    },
+    "Tendenci": {
+        "cats": [
+            1
+        ],
+        "description": "Tendenci is a platform that provides resources for managing and organizing website content without requiring knowledge of HTML or complex programming tools.",
+        "icon": "Tendenci.svg",
+        "meta": {
+            "generator": "^Tendenci$"
+        },
+        "website": "https://www.tendenci.com"
+    },
+    "Tengine": {
+        "cats": [
+            22
+        ],
+        "description": "Tengine is a web server which is based on the Nginx HTTP server.",
+        "headers": {
+            "Server": "Tengine"
+        },
+        "icon": "Tengine.png",
+        "website": "https://tengine.taobao.org"
+    },
+    "Terminalfour": {
+        "cats": [
+            1
+        ],
+        "description": "Terminalfour is a digital engagement and web content management platform for higher education.",
+        "icon": "Terminalfour.svg",
+        "meta": {
+            "generator": "TERMINALFOUR"
+        },
+        "website": "https://www.terminalfour.com"
+    },
+    "Textpattern CMS": {
+        "cats": [
+            1
+        ],
+        "description": "Textpattern CMS is an open-source content management system (CMS) that uses a tag-based template language and supports multiple languages.",
+        "icon": "Textpattern CMS.svg",
+        "meta": {
+            "generator": "Textpattern"
+        },
+        "website": "https://textpattern.com"
+    },
+    "Thelia": {
+        "cats": [
+            1,
+            6
+        ],
+        "description": "Thelia is an open-source ecommerce platform based on the Symfony framework, designed for creating customized and scalable ecommerce sites.",
+        "dom": "link[href*='/assets/frontOffice/'], style[href*='/assets/frontOffice/'], script[src*='/assets/frontOffice/']",
+        "icon": "Thelia.svg",
+        "website": "https://thelia.net"
+    },
+    "TiddlyWiki": {
+        "cats": [
+            1,
+            2,
+            4,
+            8
+        ],
+        "description": "TiddlyWiki is an open-source notebook for capturing, organising and sharing complex information.",
+        "icon": "TiddlyWiki.svg",
+        "js": {
+            "__tiddlywiki_cpl__": "",
+            "tiddler": ""
+        },
+        "meta": {
+            "application-name": "^TiddlyWiki$",
+            "copyright": "^TiddlyWiki created by Jeremy Ruston",
+            "generator": "^TiddlyWiki$",
+            "tiddlywiki-version": "^(.+)$\\;version:\\1"
+        },
+        "website": "https://tiddlywiki.com"
+    },
+    "Tiki Wiki CMS Groupware": {
+        "cats": [
+            1,
+            2,
+            8,
+            11,
+            13
+        ],
+        "description": "Tiki Wiki is a free and open-source wiki-based content management system and online office suite written primarily in PHP.",
+        "icon": "Tiki Wiki CMS Groupware.svg",
+        "meta": {
+            "generator": "^Tiki"
+        },
+        "scriptSrc": "(?:/|_)tiki",
+        "website": "https://tiki.org"
+    },
+    "Tilda": {
+        "cats": [
+            1
+        ],
+        "description": "Tilda is a web design tool.",
+        "dom": "link[href*='tildacdn'],link[href*='tilda.ws'],link[href*='tilda-blocks']",
+        "icon": "Tilda.svg",
+        "scriptSrc": "tilda(?:cdn|\\.ws|-blocks)",
+        "website": "https://tilda.cc"
+    },
+    "Tiny Slider": {
+        "cats": [
+            59
+        ],
+        "description": "Tiny Slider is a vanilla javascript slider for all purposes.",
+        "icon": "default.svg",
+        "scriptSrc": "(?:/([\\d\\.]+)/min/)?tiny-slider(?:\\.min)?\\.js\\;version:\\1",
+        "website": "https://github.com/ganlanyuan/tiny-slider"
+    },
+    "Tippy.js": {
+        "cats": [
+            59
+        ],
+        "description": "Tippy.js is the complete tooltip, popover, dropdown, and menu solution for the web, powered by Popper.",
+        "dom": "style[data-tippy-stylesheet]",
+        "icon": "Tippy.js.svg",
+        "js": {
+            "tippy.defaultProps": ""
+        },
+        "scriptSrc": "/tippy\\.js(?:@|/)?([\\d\\.]+)?\\;version:\\1",
+        "website": "https://atomiks.github.io/tippyjs"
+    },
+    "Tistory": {
+        "cats": [
+            1,
+            11
+        ],
+        "description": "Tistory is a South Korean blog-publishing service that allows private or multi-user blogs.",
+        "icon": "Tistory.svg",
+        "js": {
+            "TistoryBlog": ""
+        },
+        "website": "https://tistory.com"
+    },
+    "TogetherJS": {
+        "cats": [
+            59
+        ],
+        "description": "TogetherJS is an open-source JavaScript library by Mozilla that integrates collaboration tools and features into websites.",
+        "icon": "TogetherJS.svg",
+        "js": {
+            "TogetherJS": "",
+            "TogetherJSConfig_cloneClicks": "",
+            "TogetherJSConfig_toolName": ""
+        },
+        "website": "https://togetherjs.com"
+    },
+    "TornadoServer": {
+        "cats": [
+            22
+        ],
+        "headers": {
+            "Server": "TornadoServer(?:/([\\d.]+))?\\;version:\\1"
+        },
+        "icon": "TornadoServer.png",
+        "website": "https://tornadoweb.org"
+    },
+    "TownNews": {
+        "cats": [
+            1
+        ],
+        "description": "TownNews is a CMS platform built for local media organizations.",
+        "headers": {
+            "x-tncms": ""
+        },
+        "icon": "townnews.png",
+        "js": {
+            "TNCMS": "",
+            "TNStats_Tracker": "",
+            "TNTracker": ""
+        },
+        "website": "https://townnews.com/"
+    },
+    "Transifex": {
+        "cats": [
+            12
+        ],
+        "description": "Transifex is a cloud-based platform for managing the translation and localization of digital content.",
+        "icon": "transifex.svg",
+        "js": {
+            "Transifex.live.lib_version": "(.+)\\;version:\\1"
+        },
+        "website": "https://www.transifex.com"
+    },
+    "Tremor": {
+        "cats": [
+            59
+        ],
+        "description": "Tremor is an open-source library for building charts and dashboards using React components, designed on top of Tailwind CSS.",
+        "dom": "div[tremor-id*='tremor-raw'], div[class*='text-tremor-']",
+        "icon": "Tremor.svg",
+        "website": "https://tremor.so"
+    },
+    "TurfJS": {
+        "cats": [
+            59
+        ],
+        "description": "Turf is a modular geospatial engine written in JavaScript.",
+        "icon": "TurfJS.svg",
+        "js": {
+            "turf.feature": "",
+            "turf.point": "",
+            "turf.random": ""
+        },
+        "scriptSrc": "(turf@[\\d.]+)?/?turf\\.min\\.js",
+        "website": "https://turfjs.org/"
+    },
+    "TwicPics": {
+        "cats": [
+            31,
+            59
+        ],
+        "description": "TwicPics offers on-demand responsive image generation.",
+        "dom": {
+            ".twic": {
+                "attributes": {
+                    "data-src": ""
+                }
+            },
+            "[data-twic-src]": {
+                "attributes": {
+                    "data-twic-src": ""
+                }
+            },
+            "data-twic-background": {
+                "attributes": {
+                    "data-twic-background": ""
+                }
+            }
+        },
+        "headers": {
+            "server": "^TwicPics/\\d+\\.\\d+\\.\\d+$"
+        },
+        "icon": "TwicPics.svg",
+        "scriptSrc": ".+\\.twic\\.pics",
+        "website": "https://www.twicpics.com"
+    },
+    "Twilight CMS": {
+        "cats": [
+            1
+        ],
+        "headers": {
+            "X-Powered-CMS": "Twilight CMS"
+        },
+        "icon": "Twilight CMS.png",
+        "website": "https://www.twilightcms.com"
+    },
+    "TwistedWeb": {
+        "cats": [
+            22
+        ],
+        "headers": {
+            "Server": "TwistedWeb(?:/([\\d.]+))?\\;version:\\1"
+        },
+        "icon": "TwistedWeb.png",
+        "website": "https://twistedmatrix.com/trac/wiki/TwistedWeb"
+    },
+    "Twitter Flight": {
+        "cats": [
+            12
+        ],
+        "description": "Twitter Flight is a lightweight, component-based JavaScript framework for building web applications.",
+        "icon": "Twitter Flight.svg",
+        "js": {
+            "flight": ""
+        },
+        "website": "https://flightjs.github.io/"
+    },
+    "Twitter typeahead.js": {
+        "cats": [
+            59
+        ],
+        "icon": "Twitter typeahead.js.png",
+        "js": {
+            "typeahead": ""
+        },
+        "scriptSrc": "(?:typeahead|bloodhound)\\.(?:jquery|bundle)?(?:\\.min)?\\.js",
+        "website": "https://twitter.github.io/typeahead.js"
+    },
+    "Typer.js": {
+        "cats": [
+            59
+        ],
+        "description": "Typer.js is a JavaScript library for creating a fully configurable typing effect in HTML.",
+        "scriptSrc": "unpkg\\.com/typer-dot-js@([\\d\\.]+)/typer\\.js\\;version:\\1",
+        "website": "https://github.com/straversi/Typer.js"
+    },
+    "thttpd": {
+        "cats": [
+            22
+        ],
+        "headers": {
+            "Server": "\\bthttpd(?:/([\\d.]+))?\\;version:\\1"
+        },
+        "icon": "thttpd.png",
+        "website": "https://acme.com/software/thttpd"
+    },
+    "toastr": {
+        "cats": [
+            12
+        ],
+        "description": "toastr is a Javascript library for non-blocking notifications. The goal is to create a simple core library that can be customized and extended.",
+        "icon": "toastr.png",
+        "js": {
+            "toastr.version": "(.*)\\;version:\\1"
+        },
+        "website": "https://github.com/CodeSeven/toastr"
+    }
+}

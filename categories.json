@@ -1,22 +1,26 @@
 {
-    "12":
-    {
+    "1": {
+        "name": "CMS"
+    },
+    "3": {
+        "name": "Database managers"
+    },
+    "12": {
         "name": "JavaScript frameworks"
     },
-    "22":
-    {
+    "22": {
         "name": "Web servers"
     },
-    "59": 
-    {
-    "name": "JavaScript libraries"
+    "57": {
+        "name": "Static site generator"
     },
-    "64": 
-    {
-    "name": "Reverse proxies"
+    "59": {
+        "name": "JavaScript libraries"
     },
-    "66": 
-    {
-    "name": "UI frameworks"
-  }
+    "64": {
+        "name": "Reverse proxies"
+    },
+    "66": {
+        "name": "UI frameworks"
+    }
 }

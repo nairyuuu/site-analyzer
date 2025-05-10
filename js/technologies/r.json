@@ -1,47 +1,472 @@
 {
+    "RBS Change": {
+        "cats": [
+            1,
+            6
+        ],
+        "dom": "html[xmlns\\:change*='www.rbs.fr']",
+        "icon": "RBS Change.png",
+        "meta": {
+            "generator": "RBS Change"
+        },
+        "website": "https://www.rbschange.fr"
+    },
+    "RCMS": {
+        "cats": [
+            1
+        ],
+        "icon": "Valve.svg",
+        "meta": {
+            "generator": "^(?:RCMS|ReallyCMS)"
+        },
+        "website": "https://www.valve.fi"
+    },
+    "REC": {
+        "cats": [
+            1,
+            6
+        ],
+        "description": "REC is a customizable content management and ecommerce platform.",
+        "icon": "REC.svg",
+        "meta": {
+            "generator": "^REC$"
+        },
+        "website": "https://www.recplus.co.uk"
+    },
+    "REDAXO": {
+        "cats": [
+            1
+        ],
+        "description": "REDAXO is a content management system that provides business optimisation through web projects and output codes.",
+        "icon": "REDAXO.svg",
+        "js": {
+            "redaxo": "\\;confidence:50"
+        },
+        "website": "https://redaxo.org"
+    },
+    "RX Web Server": {
+        "cats": [
+            22
+        ],
+        "headers": {
+            "X-Powered-By": "RX-WEB"
+        },
+        "icon": "RXWeb.svg",
+        "website": "https://developers.rokitax.co.uk/projects/rxweb"
+    },
+    "Ractive.js": {
+        "cats": [
+            59
+        ],
+        "description": "Ractive.js is a template-driven UI library.",
+        "icon": "Ractive.svg",
+        "scriptSrc": "ractive/ractive\\.min\\.js",
+        "website": "https://www.ractivejs.org"
+    },
+    "Radix UI": {
+        "cats": [
+            66
+        ],
+        "description": "Radix UI is a React-based user interface component library that offers accessible, responsive, and customisable components for building web applications.",
+        "dom": "a[data-radix-collection-item], button[data-radix-collection-item]",
+        "icon": "Radix UI.svg",
+        "website": "https://www.radix-ui.com"
+    },
+    "Ramda": {
+        "cats": [
+            59
+        ],
+        "description": "Ramda is a practical functional programming library for JavaScript that emphasizes immutability, currying, and function composition to facilitate writing more declarative and modular code.",
+        "icon": "Ramda.svg",
+        "scriptSrc": "ramda.*\\.js",
+        "website": "https://ramdajs.com"
+    },
+    "Rayo": {
+        "cats": [
+            1
+        ],
+        "icon": "Rayo.png",
+        "js": {
+            "Rayo": ""
+        },
+        "meta": {
+            "generator": "^Rayo"
+        },
+        "website": "https://www.rayo.ir"
+    },
     "React": {
-    "cats": [
-      12
-    ],
-    "cpe": "cpe:2.3:a:facebook:react:*:*:*:*:*:*:*:*",
-    "description": "React is an open-source JavaScript library for building user interfaces or UI components.",
-    "dom": {
-      "body > div": {
-        "properties": {
-          "_reactRootContainer": "",
-          "__reactContainer": ""
-        }
-      },
-      "div[id*='react-root'], span[id*='react-'], style[id*='react-tooltip-core-styles']": {
-        "exists": ""
-      }
+        "cats": [
+            12
+        ],
+        "description": "React is an open-source JavaScript library for building user interfaces or UI components.",
+        "dom": {
+            "body > div": {
+                "properties": {
+                    "_reactRootContainer": ""
+                }
+            },
+            "div[id*='react-root'], span[id*='react-'], style[id*='react-tooltip-core-styles']": {
+                "exists": ""
+            }
+        },
+        "icon": "React.svg",
+        "js": {
+            "React.version": "^([\\d\\.]+)$\\;version:\\1",
+            "ReactOnRails": "",
+            "__REACT_ON_RAILS_EVENT_HANDLERS_RAN_ONCE__": "",
+            "__isReactFizzContext": "",
+            "__REACT_DEVTOOLS_GLOBAL_HOOK__": ""
+        },
+        "meta": {
+            "description": "^Web site created using create-react-app$"
+        },
+        "scriptSrc": [
+            "react(?:-with-addons)?[.-](\\d+(?:\\.\\d+)+)[^/]*\\.js\\;version:\\1",
+            "/([\\d\\.]+)/react(?:\\.min)?\\.js\\;version:\\1",
+            "^react\\b.*\\.js"
+        ],
+        "website": "https://reactjs.org"
     },
-    "icon": "React.svg",
-    "js": {
-      "React.version": "^([\\d\\.]+)$\\;version:\\1",
-      "ReactOnRails": "",
-      "__REACT_ON_RAILS_EVENT_HANDLERS_RAN_ONCE__": "",
-      "__isReactFizzContext": "",
-      "__REACT_DEVTOOLS_GLOBAL_HOOK__": ""
+    "React Bricks": {
+        "cats": [
+            1
+        ],
+        "description": "React Bricks is a visual editing CMS based on React components.",
+        "dom": {
+            "img[src*='react']": {
+                "attributes": {
+                    "src": "react(?:-)?bricks\\."
+                }
+            }
+        },
+        "icon": "React Bricks.svg",
+        "website": "https://reactbricks.com"
     },
-    "meta": {
-      "description": "^Web site created using create-react-app$"
+    "React Flow": {
+        "cats": [
+            59
+        ],
+        "description": "React Flow is a library for building node-based applications.",
+        "dom": {
+            "style[type='text/css']": {
+                "text": "react-flow"
+            }
+        },
+        "icon": "React Flow.svg",
+        "website": "https://reactflow.dev"
     },
-    "scriptSrc": [
-      "react(?:-with-addons)?[.-](\\d+(?:\\.\\d+)+)[^/]*\\.js\\;version:\\1",
-      "/([\\d\\.]+)/react(?:\\.min)?\\.js\\;version:\\1",
-      "^react\\b.*\\.js"
-    ],
-    "website": "https://reactjs.org"
+    "React Native for Web": {
+        "cats": [
+            59
+        ],
+        "description": "React Native for Web is a library that allows developers to use React Native components and patterns to build cross-platform web applications alongside native mobile applications.",
+        "dom": "style#react-native-stylesheet",
+        "icon": "React.svg",
+        "website": "https://necolas.github.io/react-native-web/"
     },
-    "Apache HTTP Server": {
-    "cats": [
-      22
-    ],
-    "cpe": "cpe:2.3:a:apache:http_server:*:*:*:*:*:*:*:*",
-    "description": "Apache is a free and open-source cross-platform web server software.",
-    "headers": {
-      "Server": "(?:Apache(?:$|/([\\d.]+)|[^/-])|(?:^|\\b)HTTPD)\\;version:\\1"
+    "React Redux": {
+        "cats": [
+            12
+        ],
+        "description": "React Redux is the official React binding for Redux.",
+        "icon": "Redux.svg",
+        "scriptSrc": [
+            "/react-redux(@|/)([\\d.]+)(?:/[a-z]+)?/react-redux(?:.min)?\\.js\\;version:\\2"
+        ],
+        "website": "https://react-redux.js.org/"
+    },
+    "React Router": {
+        "cats": [
+            12
+        ],
+        "description": "React Router provides declarative routing for React.",
+        "icon": "React Router.svg",
+        "js": {
+            "__reactRouterVersion": "^([\\d\\.]+)$\\;version:\\1"
+        },
+        "scriptSrc": [
+            "(?:/react-router(@|/)([\\d.]+)(?:/[a-z]+)?)?/react-router(?:\\.min)?\\.js\\;version:\\2"
+        ],
+        "website": "https://reactrouter.com"
+    },
+    "Reactive": {
+        "cats": [
+            1,
+            6
+        ],
+        "description": "Reactive is a subscription-based software that allows you to set up an online store and website. It has a CMS and has been created to support retail, coffee bars, restaurants owners and accomodation properties such as hotels or villas. With Reactive one can sell products or accept reservations and online orders.",
+        "icon": "Reactive.svg",
+        "meta": {
+            "generator": "Reactive"
+        },
+        "website": "https://reactiveonline.io"
+    },
+    "ReadMe": {
+        "cats": [
+            4,
+            1
+        ],
+        "description": "ReadMe is a content management system that businesses use to create and manage technical or API documentation.",
+        "icon": "readme.svg",
+        "meta": {
+            "readme-deploy": "^[\\d\\.]+$",
+            "readme-version": "^[\\d\\.]+$"
+        },
+        "scriptSrc": "/cdn\\.readme\\.io/js/",
+        "website": "https://readme.com"
+    },
+    "RebelMouse": {
+        "cats": [
+            1
+        ],
+        "headers": {
+            "x-rebelmouse-cache-control": "",
+            "x-rebelmouse-surrogate-control": ""
+        },
+        "icon": "RebelMouse.svg",
+        "js": {
+            "REBELMOUSE_ACTIVE_TASKS_QUEUE": ""
+        },
+        "website": "https://www.rebelmouse.com/"
+    },
+    "Redux": {
+        "cats": [
+            12
+        ],
+        "description": "Redux is a predictable state container for JavaScript applications.",
+        "dom": "link[href*='//redux.js.org']",
+        "icon": "Redux.svg",
+        "js": {
+            "__REDUX_DEVTOOLS_EXTENSION__": ""
+        },
+        "scriptSrc": [
+            "/redux(@|/)([\\d.]+)(?:/[a-z]+)?/redux(?:.min)?\\.js\\;version:\\2"
+        ],
+        "website": "https://redux.js.org"
+    },
+    "RedwoodJS": {
+        "cats": [
+            12,
+            18
+        ],
+        "description": "RedwoodJS is a full-stack serverless web application framework built by Tom Preston Werner (co-founder of Github) et al.",
+        "dom": "div#redwood-app",
+        "icon": "RedwoodJS.svg",
+        "website": "https://redwoodjs.com"
+    },
+    "Remix": {
+        "cats": [
+            18,
+            22
+        ],
+        "description": "Remix is a React framework used for server-side rendering (SSR).",
+        "icon": "Remix.svg",
+        "js": {
+            "__remixContext": "",
+            "__remixRouteModules": "",
+            "__remixRouter": ""
+        },
+        "website": "https://remix.run/"
+    },
+    "Replicache": {
+        "cats": [
+            12,
+            23
+        ],
+        "description": "Replicache is a JavaScript framework for building high-performance, offline-capable, collaborative web apps.",
+        "headers": {
+            "x-replicache-requestid": ""
+        },
+        "icon": "Replicache.svg",
+        "website": "https://replicache.dev/"
+    },
+    "RequireJS": {
+        "cats": [
+            12
+        ],
+        "description": "RequireJS is a JavaScript library and file loader which manages the dependencies between JavaScript files and in modular programming.",
+        "icon": "RequireJS.svg",
+        "js": {
+            "requirejs.version": "^(.+)$\\;version:\\1"
+        },
+        "scriptSrc": "require.*\\.js",
+        "website": "https://requirejs.org"
+    },
+    "Resin": {
+        "cats": [
+            22
+        ],
+        "headers": {
+            "Server": "^Resin(?:/(\\S*))?\\;version:\\1"
+        },
+        "icon": "Resin.png",
+        "website": "https://caucho.com"
+    },
+    "Retina.js": {
+        "cats": [
+            59
+        ],
+        "description": "Retina.js is an open-source script designed to facilitate the delivery of high-resolution images to devices with retina displays.",
+        "js": {
+            "RetinaImage": "",
+            "retinajs": ""
+        },
+        "scriptSrc": "/js/retina(\\.min)?\\.js\\?ver=([\\d\\.]+)\\;version:\\2",
+        "website": "https://imulus.github.io/retinajs"
+    },
+    "Retype": {
+        "cats": [
+            57
+        ],
+        "description": "Retype is an open-source static site generator built with Node.js that allows users to create and manage websites with ease using Markdown as the primary content format.",
+        "icon": "retype.svg",
+        "meta": {
+            "generator": "Retype\\s([\\d\\.]+)?\\;version:\\1"
+        },
+        "website": "https://retype.com"
+    },
+    "Reveal.js": {
+        "cats": [
+            12
+        ],
+        "description": "Reveal.js is a JavaScript framework for building dynamic and interactive presentations using web technologies like HTML, CSS, and JavaScript.",
+        "icon": "reveal.js.svg",
+        "js": {
+            "Reveal.VERSION": "^(.+)$\\;version:\\1"
+        },
+        "scriptSrc": "(?:^|/)reveal(?:\\.min)?\\.js",
+        "website": "https://revealjs.com"
+    },
+    "RightJS": {
+        "cats": [
+            12
+        ],
+        "description": "RightJS is a modular JavaScript framework.",
+        "icon": "RightJS.png",
+        "js": {
+            "RightJS": ""
+        },
+        "website": "https://github.com/rightjs"
+    },
+    "Riot.js": {
+        "cats": [
+            12
+        ],
+        "description": "Riot.js is a minimalistic, component-based UI library that enables developers to create custom elements in modern browsers with a small footprint and simple API.",
+        "icon": "Riot.js.svg",
+        "js": {
+            "riot": "",
+            "riot.version": "v([\\d\\.]+)\\;version:\\1"
+        },
+        "scriptSrc": "riot(?:\\+compiler)?(?:\\.min)?\\.js",
+        "website": "https://riot.js.org"
+    },
+    "Ripple": {
+        "cats": [
+            12
+        ],
+        "description": "Ripple is the frontend framework for Single Digital Presence, delivered using Nuxt and Vue.js.",
+        "headers": {
+            "x-sdp-app-type": "ripple"
+        },
+        "icon": "ripple.png",
+        "website": "https://dpc-sdp.github.io/sdp-docs/ripple/"
+    },
+    "RiteCMS": {
+        "cats": [
+            1
+        ],
+        "icon": "RiteCMS.png",
+        "meta": {
+            "generator": "^RiteCMS(?: (.+))?\\;version:\\1"
+        },
+        "website": "https://ritecms.com"
+    },
+    "RoadRunner": {
+        "cats": [
+            22
+        ],
+        "description": "RoadRunner is a high-performance PHP application server, load balancer, and process manager written in Golang.",
+        "headers": {
+            "Server": "RoadRunner"
+        },
+        "icon": "RoadRunner.svg",
+        "website": "https://roadrunner.dev"
+    },
+    "Roadiz CMS": {
+        "cats": [
+            1,
+            11
+        ],
+        "description": "Roadiz CMS is a polymorphic CMS based on Symfony Flex, Doctrine ORM, API Platform, and Twig.",
+        "headers": {
+            "X-Powered-By": "Roadiz CMS"
+        },
+        "icon": "Roadiz CMS.svg",
+        "meta": {
+            "generator": "^Roadiz ?(?:master|develop)? v?([0-9\\.]+)\\;version:\\1"
+        },
+        "website": "https://www.roadiz.io"
+    },
+    "RockRMS": {
+        "cats": [
+            1,
+            11,
+            32
+        ],
+        "description": "Rock RMS is a free, open-source Relationship Management System (RMS) built for churches and businesses.",
+        "icon": "RockRMS.svg",
+        "meta": {
+            "generator": "^Rock v([0-9.]+)\\;version:\\1"
+        },
+        "website": "https://www.rockrms.com"
+    },
+    "Rspress": {
+        "cats": [
+            57
+        ],
+        "description": "Rspress is a static site generator built on Rspack, offering features like MDX support, full-text search, internationalization, and customizable themes\u200b.",
+        "icon": "Rspress.svg",
+        "meta": {
+            "generator": "Rspress\\sv([\\d\\.]+)\\;version:\\1"
+        },
+        "website": "https://rspress.dev"
+    },
+    "Rubedo": {
+        "cats": [
+            1
+        ],
+        "description": "Rubedo is an open-source PHP CMS powered by the Zend Framework, NoSQL MongoDB, Elasticsearch, and AngularJS, offering advanced features for content management and development.",
+        "js": {
+            "rubedoConfig": ""
+        },
+        "website": "https://github.com/WebTales/rubedo"
+    },
+    "RunKit": {
+        "cats": [
+            47,
+            59
+        ],
+        "description": "RunKit is a tool for prototyping server-side JavaScript.",
+        "icon": "RunKit.svg",
+        "js": {
+            "RunKit": "",
+            "RunKit.version": "([\\d\\.]+)\\;version:\\1"
+        },
+        "scriptSrc": "\\.runkit\\.com",
+        "website": "https://runkit.com"
+    },
+    "RxJS": {
+        "cats": [
+            12
+        ],
+        "description": "RxJS is a reactive library used to implement reactive programming to deal with async implementation, callbacks, and event-based programs.",
+        "icon": "RxJS.svg",
+        "js": {
+            "Rx.CompositeDisposable": "",
+            "Rx.Symbol": ""
+        },
+        "scriptSrc": "rx(?:\\.\\w+)?(?:\\.compat|\\.global)?(?:\\.min)?\\.js",
+        "website": "https://reactivex.io"
     }
-  }
 }

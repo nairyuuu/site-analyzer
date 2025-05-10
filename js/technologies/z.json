@@ -1,0 +1,81 @@
+{
+    "ZURB Foundation": {
+        "cats": [
+            66
+        ],
+        "description": "Zurb Foundation is used to prototype in the browser. Allows rapid creation of websites or applications while leveraging mobile and responsive technology. The front end framework is the collection of HTML, CSS, and Javascript containing design patterns.",
+        "icon": "ZURB Foundation.png",
+        "js": {
+            "Foundation.version": "([\\d.]+)\\;version:\\1"
+        },
+        "website": "https://foundation.zurb.com"
+    },
+    "Zend": {
+        "cats": [
+            22
+        ],
+        "cookies": {
+            "ZENDSERVERSESSID": ""
+        },
+        "description": "Zend is a company that provides PHP development tools and solutions, including frameworks, servers, and development environments, to help developers build, deploy, and manage PHP applications.",
+        "headers": {
+            "X-Powered-By": "Zend(?:Server)?(?:[\\s/]?([0-9.]+))?\\;version:\\1"
+        },
+        "icon": "Zend.svg",
+        "website": "https://zend.com"
+    },
+    "Zepto": {
+        "cats": [
+            59
+        ],
+        "icon": "Zepto.png",
+        "js": {
+            "Zepto": ""
+        },
+        "scriptSrc": "zepto.*\\.js",
+        "website": "https://zeptojs.com"
+    },
+    "Ziggy": {
+        "cats": [
+            59
+        ],
+        "description": "Ziggy is a library that allows using Laravel named routes in JavaScript.",
+        "icon": "Ziggy.png",
+        "js": {
+            "Ziggy": ""
+        },
+        "website": "https://github.com/tighten/ziggy"
+    },
+    "Zola": {
+        "cats": [
+            57
+        ],
+        "description": "Zola is a static site engine that consolidates essential features in a single binary.",
+        "icon": "Zola.svg",
+        "meta": {
+            "generator": "^Zola(?:\\s[\\d\\.]+)?$"
+        },
+        "website": "https://www.getzola.org/"
+    },
+    "Zone.js": {
+        "cats": [
+            12
+        ],
+        "icon": "Angular.svg",
+        "js": {
+            "Zone.root": ""
+        },
+        "website": "https://github.com/angular/angular/tree/master/packages/zone.js"
+    },
+    "Zope": {
+        "cats": [
+            22
+        ],
+        "description": "Zope is an open-source web application server and content management framework that helps developers build and manage complex web applications with features like object-oriented programming and scalable architecture.",
+        "headers": {
+            "Server": "^Zope/"
+        },
+        "icon": "Zope.svg",
+        "website": "https://zope.org"
+    }
+}
